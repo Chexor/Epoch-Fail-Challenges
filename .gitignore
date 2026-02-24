@@ -1,0 +1,8 @@
+# Obsidian cache/workspace
+.obsidian/cache/
+.obsidian/workspace
+.obsidian/workspace.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
