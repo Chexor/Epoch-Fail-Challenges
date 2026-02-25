@@ -1,0 +1,3 @@
+# Variantie
+
+Zie: [[Spreidingsmaten#Variantie]].

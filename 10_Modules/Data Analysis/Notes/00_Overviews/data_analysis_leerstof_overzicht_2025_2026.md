@@ -31,7 +31,7 @@
 
 ### 1️⃣ Centrummaten
 - Rekenkundig gemiddelde
-- Mediaan
+- Mediaan ^8e2e13
 - Modus
 
 ### 2️⃣ Spreidingsmaten

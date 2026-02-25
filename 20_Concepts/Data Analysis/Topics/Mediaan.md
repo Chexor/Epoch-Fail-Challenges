@@ -1,0 +1,3 @@
+# Mediaan
+
+Zie: [[Centrummaten#Mediaan]].

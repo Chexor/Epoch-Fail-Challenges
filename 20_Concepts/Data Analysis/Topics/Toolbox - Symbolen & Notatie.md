@@ -1,16 +1,11 @@
 # Symbolen & Notatie
 
-Een overzicht van de belangrijkste symbolen en hun betekenis. Link naar de volledige glossary: [[Symbolen_En_Tekens_Glossary]].
+SSOT: [[Symbolen_En_Tekens_Glossary]].
 
-**Populatie vs. Steekproef:**
--   **Populatiegemiddelde:** μ (mu)
--   **Steekproefgemiddelde:** x̄ (x-bar)
--   **Populatiestandaardafwijking:** σ (sigma)
--   **Steekproefstandaardafwijking:** s
+## Snelle herhaling
+![[Symbolen_En_Tekens_Glossary#⭐ Top 15 symbolen (snelle herhaling)]]
 
-**Hypothesetoetsen:**
--   **Nulhypothese:** H₀
--   **Alternatieve hypothese:** H₁
--   **Significatieniveau:** α (alpha)
-
-Goed de symbolen kennen is de halve strijd!
+## Per onderwerp
+- [[Notatie - Beschrijvende Statistiek]]
+- [[Notatie - Kansrekening]]
+- [[Notatie - Verklarende Statistiek]]

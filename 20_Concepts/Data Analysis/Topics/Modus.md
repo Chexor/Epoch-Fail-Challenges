@@ -1,0 +1,3 @@
+# Modus
+
+Zie: [[Centrummaten#Modus]].

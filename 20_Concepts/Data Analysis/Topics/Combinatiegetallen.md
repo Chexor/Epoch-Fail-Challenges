@@ -4,7 +4,9 @@
 Een combinatiegetal (notatie: "n boven k" of C(n,k)) geeft aan op hoeveel manieren je *k* objecten kunt kiezen uit een verzameling van *n* objecten, waarbij de **volgorde niet van belang** is.
 
 **Formule:**
-n! / (k! * (n-k)!)
+$$ \binom{n}{k} = \frac{n!}{k!(n-k)!} $$
+
+(Soms geschreven als $C(n,k)$.)
 Waarbij `!` staat voor faculteit (bv. 5! = 5 * 4 * 3 * 2 * 1).
 
 **Voorbeeld:**

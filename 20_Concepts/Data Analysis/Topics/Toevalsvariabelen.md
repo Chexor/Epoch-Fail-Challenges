@@ -44,7 +44,13 @@ De **standaardafwijking** ($\sigma$) is simpelweg de wortel uit de variantie: $\
 
 ---
 ### Onafhankelijkheid en Rekenregels voor Som/Verschil
-- **Onafhankelijkheid:** Twee toevalsvariabelen `X` en `Y` zijn onafhankelijk als de uitkomst van de een geen invloed heeft op de uitkomst van de ander. Formeel: $P(X=x \cap Y=y) = P(X=x) \cdot P(Y=y)$ voor alle `x` en `y`.
+- **Onafhankelijkheid:** Twee toevalsvariabelen `X` en `Y` zijn onafhankelijk als de uitkomst van de een geen invloed heeft op de uitkomst van de ander.
+
+  Voor discrete variabelen kun je dit schrijven als:
+  $$ P(X=x, Y=y) = P(X=x) \cdot P(Y=y) $$
+  voor alle `x` en `y`.
+
+  (Voor continue variabelen formuleer je dit analoog met dichtheden.)
 
 - **Verwachtingswaarde van Som/Verschil:**
   Dit geldt *altijd*, ook als de variabelen niet onafhankelijk zijn.

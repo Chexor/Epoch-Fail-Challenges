@@ -3,16 +3,18 @@
 **Wat zijn het?**
 Dit zijn de sleutelcomponenten die de breedte en de betekenis van een [[Betrouwbaarheidsintervallen]] bepalen.
 
-1.  **Betrouwbaarheidsniveau (1 - α):**
-    -   **Wat is het?** De mate van vertrouwen die je hebt dat het interval de ware populatieparameter bevat. Meestal wordt 95% gekozen.
-    -   **Interpretatie:** Als je 100 steekproeven zou nemen en 100 intervallen zou berekenen, zouden ongeveer 95 van die intervallen de ware waarde bevatten.
+## Betrouwbaarheidsniveau (1 - α)
+- **Wat is het?** De mate van vertrouwen dat het interval de ware populatieparameter bevat. Vaak 95%.
+- **Interpretatie:** Als je dit proces heel vaak herhaalt, zal ongeveer 95% van de intervallen de ware waarde bevatten.
 
-2.  **Kritieke Waarden (z* of t*):**
-    -   **Wat is het?** De grenzen op de z- of t-verdeling die overeenkomen met je gekozen betrouwbaarheidsniveau. Ze bepalen de breedte van de foutenmarge.
-    -   *Voorbeeld:* Voor een 95% betrouwbaarheidsinterval is de kritieke z-waarde altijd 1.96.
+## Kritieke waarden (z* of t*)
+- **Wat is het?** Grenzen op de z- of t-verdeling die horen bij je betrouwbaarheidsniveau.
+- **Effect:** Hogere betrouwbaarheid -> grotere kritieke waarde -> breder interval.
+- **Voorbeeld:** Voor 95% is de kritieke z-waarde 1.96.
 
-3.  **Minimale Steekproefgrootte (n):**
-    -   **Wat is het?** Je kunt de formule van het betrouwbaarheidsinterval "omdraaien" om te berekenen hoe groot je steekproef minstens moet zijn om een gewenste precisie (foutenmarge) te bereiken.
+## Minimale steekproefgrootte (n)
+- **Wat is het?** Je kunt de formule van een betrouwbaarheidsinterval omdraaien om `n` te vinden voor een gewenste fouten­marge.
+- **Effect:** Groter `n` -> kleinere standaardfout -> smaller interval.
 
 **Waarom is dit belangrijk?**
 Deze details maken een betrouwbaarheidsinterval van een vage schatting tot een precieze, wetenschappelijk onderbouwde uitspraak over onzekerheid.

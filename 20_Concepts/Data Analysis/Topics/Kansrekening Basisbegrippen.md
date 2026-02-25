@@ -13,39 +13,35 @@ Kansrekening is de wiskunde van toeval. Het geeft ons een formele manier om de w
 
 ### Fundamentele Rekenregels
 
-1.  **Regel van Laplace:**
-    Als alle uitkomsten in een eindig universum even waarschijnlijk zijn:
-    $$ P(A) = \frac{\text{aantal gunstige uitkomsten}}{\text{totaal aantal mogelijke uitkomsten}} $$
+#### Basisidee (Laplace + complement)
+Als alle uitkomsten in een eindig universum even waarschijnlijk zijn:
+$$ P(A) = \frac{\text{aantal gunstige uitkomsten}}{\text{totaal aantal mogelijke uitkomsten}} $$
 
-2.  **Complementregel:**
-    De kans dat gebeurtenis A *niet* plaatsvindt, is 1 min de kans dat A wel plaatsvindt.
-    $$ P(A^c) = 1 - P(A) $$
+De kans dat gebeurtenis A *niet* plaatsvindt, is 1 min de kans dat A wel plaatsvindt.
+$$ P(A^c) = 1 - P(A) $$
 
-3.  **Somregel (voor disjuncte gebeurtenissen):**
-    Als gebeurtenissen A en B elkaar uitsluiten (niet tegelijk kunnen gebeuren):
-    $$ P(A \cup B) = P(A) + P(B) $$
-    ($\cup$ betekent "of")
+#### Somregels
+Als gebeurtenissen A en B elkaar uitsluiten (niet tegelijk kunnen gebeuren):
+$$ P(A \cup B) = P(A) + P(B) $$
+($\cup$ betekent "of")
 
-4.  **Algemene Somregel:**
-    Voor twee willekeurige gebeurtenissen A en B:
-    $$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$
-    ($\cap$ betekent "en". We trekken de overlap eraf om dubbeltelling te voorkomen.)
+Voor twee willekeurige gebeurtenissen A en B:
+$$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$
+($\cap$ betekent "en". We trekken de overlap eraf om dubbeltelling te voorkomen.)
 
-5.  **Productregel (voor onafhankelijke gebeurtenissen):**
-    Als het plaatsvinden van A geen invloed heeft op de kans van B:
-    $$ P(A \cap B) = P(A) \cdot P(B) $$
+#### Productregels
+Als het plaatsvinden van A geen invloed heeft op de kans van B:
+$$ P(A \cap B) = P(A) \cdot P(B) $$
 
-6.  **Voorwaardelijke Kans:**
-    De kans op A, *gegeven dat* B heeft plaatsgevonden:
-    $$ P(A|B) = \frac{P(A \cap B)}{P(B)} $$
+Volgt direct uit de voorwaardelijke kans, voor twee willekeurige gebeurtenissen:
+$$ P(A \cap B) = P(A|B) \cdot P(B) $$
 
-7.  **Algemene Productregel:**
-    Volgt direct uit de voorwaardelijke kans, voor twee willekeurige gebeurtenissen:
-    $$ P(A \cap B) = P(A|B) \cdot P(B) $$
+#### Voorwaardelijke kans + Bayes
+De kans op A, *gegeven dat* B heeft plaatsgevonden:
+$$ P(A|B) = \frac{P(A \cap B)}{P(B)} $$
 
-8.  **Formule van Bayes:**
-    Draait een voorwaardelijke kans om. Hiermee bereken je $P(B|A)$ als je $P(A|B)$ weet.
-    $$ P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)} $$
+Draait een voorwaardelijke kans om. Hiermee bereken je $P(B|A)$ als je $P(A|B)$ weet.
+$$ P(B|A) = \frac{P(A|B) \cdot P(B)}{P(A)} $$
 
 ---
 

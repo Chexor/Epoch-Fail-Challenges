@@ -1,50 +1,48 @@
 # Spreidingsmaten
 
-**Wat is het?**
-Getallen die beschrijven hoe ver de data uit elkaar liggen, of hoe "gespreid" de dataset is.
+## Overzicht
+Spreidingsmaten zijn kengetallen die beschrijven hoe ver de data uit elkaar liggen (hoe "gespreid" de dataset is). Ze geven context bij een centrummaat: hoe consistent zijn de waarden?
 
----
+## Variantie
+De **variantie** is de gemiddelde gekwadrateerde afstand van elke waarde tot het gemiddelde. Het meet spreiding in gekwadrateerde eenheden.
 
-### 1. Variantie
-De variantie is de gemiddelde gekwadrateerde afstand van elke waarde tot het gemiddelde. Een grotere variantie betekent meer spreiding.
+### Formules
+- **Conventie (n vs. n-1):**
+  In sommige cursussen (ook in ons formularium) wordt de "beschrijvende" standaardafwijking/variantie met `n` in de noemer geschreven. In veel statistiekboeken gebruikt men `n-1` voor de onbevooroordeelde schatting van de populatievariantie.
 
-**Formules & Berekening:**
-- **Steekproefvariantie (`s²`):**
-  $$ s^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1} $$
-  - `(xᵢ - x̄)²`: Voor elke waarde, bereken het verschil met het gemiddelde en kwadrateer dit.
-  - `Σ`: Tel al deze gekwadrateerde verschillen op.
-  - `n-1`: Deel door het aantal waarden min één. We delen door `n-1` (en niet `n`) om een betere, "eerlijkere" schatting te krijgen van de populatievariantie. Dit heet de correctie van Bessel.
+- **Variantiesom (beschrijvend, noemer `n`):**
+  $$ s_n^2 = \frac{1}{n}\sum_{i=1}^{n} (x_i - \bar{x})^2 $$
+
+- **Onbevooroordeelde steekproefvariantie (noemer `n-1`):**
+  $$ s^2 = \frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2 $$
 
 - **Populatievariantie (`σ²`):**
   $$ \sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} $$
-  - Hier deel je wel door de totale grootte van de populatie `N`.
 
-### 2. Standaardafwijking (of Standaarddeviatie)
-De standaardafwijking is de wortel uit de variantie. Het is de meest gebruikte spreidingsmaat omdat de eenheid dezelfde is als die van de data zelf.
+## Standaardafwijking
+De **standaardafwijking** is de vierkantswortel van de variantie. Het is de meest gebruikte spreidingsmaat omdat het in dezelfde eenheid is als de data.
 
-**Formules & Berekening:**
-- **Steekproefstandaardafwijking (`s`):**
-  $$ s = \sqrt{s^2} = \sqrt{\frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n-1}} $$
+### Formules
+- **Beschrijvende standaardafwijking (noemer `n`):**
+  $$ s_n = \sqrt{\frac{1}{n}\sum_{i=1}^{n} (x_i - \bar{x})^2} $$
+
+- **Onbevooroordeelde variantieschatting (noemer `n-1`):**
+  $$ s = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n} (x_i - \bar{x})^2} $$
 
 - **Populatiestandaardafwijking (`σ`):**
-  $$ \sigma = \sqrt{\sigma^2} = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}} $$
+  $$ \sigma = \sqrt{\frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}} $$
 
-### 3. Variatiebreedte (Range)
-De eenvoudigste spreidingsmaat: het verschil tussen de hoogste en de laagste waarde in de dataset.
+- **Voor gegroepeerde data (rekenformule):**
+  $$ s_n = \sqrt{\frac{\sum f_i \cdot X_i^2}{n} - \bar{x}^2} $$
+
+  (Als je de variantie met `n-1` wil, pas je eerst de variantie-correctie toe: $s^2 = \frac{n}{n-1}s_n^2$.)
+
+## Variatiebreedte (Range)
+De **variatiebreedte** is het verschil tussen de hoogste en de laagste waarde.
 $$ \text{Variatiebreedte} = \max(x) - \min(x) $$
-- *Extreem gevoelig voor uitschieters.*
+Hij is extreem gevoelig voor uitschieters.
 
----
-### Speciale Formules voor Gegroepeerde Data
-- **Standaardafwijking (Gegroepeerd - rekenformule):**
-  Een snellere manier om de standaardafwijking voor gegroepeerde data te berekenen.
-  $$ s = \sqrt{\frac{\sum f_i \cdot X_i^2}{n} - \bar{x}^2} $$
-  - `fᵢ` is de frequentie van een klasse.
-  - `Xᵢ` is het **klassenmidden** van die klasse.
-  - `n` is het totaal aantal waarnemingen.
-  - `x̄` is het (eerder berekende) gegroepeerde gemiddelde.
-
----
-
-**Waarom is dit belangrijk?**
-Spreidingsmaten vertellen je over de consistentie en betrouwbaarheid van je data. Een kleine spreiding betekent dat de waarden dicht bij het gemiddelde liggen en dus voorspelbaarder zijn. De standaardafwijking is een fundamentele bouwsteen voor bijna alle verdere statistische analyses.
+## Praktische keuze
+- Standaardafwijking: meest bruikbaar als "standaard" spreidingsmaat.
+- Variantie: vooral handig als tussenstap (bv. in formules).
+- Variatiebreedte: snel inzicht, maar fragiel bij outliers.

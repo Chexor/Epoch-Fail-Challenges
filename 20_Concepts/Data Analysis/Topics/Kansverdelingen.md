@@ -31,11 +31,11 @@ De belangrijkste continue kansverdeling. Het beschrijft talloze natuurlijke feno
 -   De vorm wordt volledig bepaald door twee parameters:
     -   **Populatiegemiddelde `μ`**: Bepaalt het centrum van de curve.
     -   **Populatiestandaardafwijking `σ`**: Bepaalt de breedte (spreiding) van de curve.
--   Notatie: $X \sim N(\mu, \sigma)$
+-   Notatie: $X \sim \mathcal{N}(\mu, \sigma^2)$
 
 **Standaardnormale Verdeling (Z-verdeling):**
 Een speciale normale verdeling met een gemiddelde van 0 en een standaardafwijking van 1.
-$$ Z \sim N(0, 1) $$
+$$ Z \sim \mathcal{N}(0, 1) $$
 We kunnen elke normale verdeling omzetten naar een Z-verdeling met de **Z-score**:
 $$ Z = \frac{X - \mu}{\sigma} $$
 De Z-score drukt uit hoeveel standaardafwijkingen een waarde `X` van het gemiddelde `μ` verwijderd is.
@@ -43,4 +43,4 @@ De Z-score drukt uit hoeveel standaardafwijkingen een waarde `X` van het gemidde
 ---
 
 **Waarom is dit belangrijk?**
-Deze verdelingen zijn krachtige modellen. Als we kunnen aannemen dat onze data een bepaalde verdeling volgen, kunnen we met deze formules en de [[Toolbox - Statistische Tabellen|statistische tabellen]] specifieke kansen berekenen en voorspellingen doen. De normale verdeling is de basis voor de [[Centrale Limietstelling]] en dus voor bijna alle [[Hypothesetoetsen]] en [[Betrouwbaarheidsintervallen]].
+Deze verdelingen zijn krachtige modellen. Als we kunnen aannemen dat onze data een bepaalde verdeling volgen, kunnen we met deze formules en de [[Toolbox - Statistische Tabellen|statistische tabellen]] specifieke kansen berekenen en voorspellingen doen. De normale verdeling is de basis voor de [[Steekproefverdelingen#Centrale Limietstelling]] en dus voor bijna alle [[Hypothesetoetsen]] en [[Betrouwbaarheidsintervallen]].

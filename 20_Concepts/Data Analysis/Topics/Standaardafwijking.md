@@ -1,0 +1,3 @@
+# Standaardafwijking
+
+Zie: [[Spreidingsmaten#Standaardafwijking]].
