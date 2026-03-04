@@ -1,10 +1,10 @@
 # Epoch Fail Challenges
 
-This repository contains our team challenge work (not the full study vault).
+This repository contains our team challenge work.
 
 ## Challenges
 
-- `challenges/eda-challenge/` - Exploratory Data Analysis challenge (Green/Dead River)
+- `challenges/eda-challenge/` - Exploratory Data Analysis challenge (The Green River Affair)
 
 ## Google Colab
 
