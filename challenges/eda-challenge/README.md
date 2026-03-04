@@ -1,4 +1,4 @@
-# EDA Challenge - The Green (Dead) River Affair
+# EDA Challenge - The Green River Affair
 
 ## Folder layout
 
