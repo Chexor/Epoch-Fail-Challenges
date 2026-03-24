@@ -1,0 +1,112 @@
+filters:
+  and:
+    - file.ext == "md"
+    - file.path.startsWith("20_Concepts/")
+properties:
+  file.name:
+    displayName: Note
+  type:
+    displayName: Type
+  domain:
+    displayName: Domain
+  parent:
+    displayName: Parent
+  theme:
+    displayName: Theme
+  related:
+    displayName: Related
+  aliases:
+    displayName: Aliases
+  file.path:
+    displayName: Path
+views:
+  - type: table
+    name: Alles
+    order:
+      - file.name
+      - type
+      - domain
+      - parent
+      - theme
+    sort:
+      - property: domain
+        direction: ASC
+      - property: type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Alle Topics
+    filters:
+      and:
+        - type == "concept-topic"
+    order:
+      - file.name
+      - domain
+      - parent
+      - theme
+    sort:
+      - property: domain
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topics per Parent
+    filters:
+      and:
+        - type == "concept-topic"
+    order:
+      - parent
+      - file.name
+      - domain
+      - theme
+    sort:
+      - property: parent
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Alle Comparisons
+    filters:
+      and:
+        - type == "concept-comparison"
+    order:
+      - file.name
+      - domain
+      - parent
+      - theme
+    sort:
+      - property: domain
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Alle Execution
+    filters:
+      and:
+        - type == "concept-execution"
+    order:
+      - file.name
+      - domain
+      - parent
+      - theme
+    sort:
+      - property: domain
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Alle Maps
+    filters:
+      and:
+        - type == "concept-map"
+    order:
+      - file.name
+      - domain
+      - parent
+      - theme
+    sort:
+      - property: domain
+        direction: ASC
+      - property: file.name
+        direction: ASC

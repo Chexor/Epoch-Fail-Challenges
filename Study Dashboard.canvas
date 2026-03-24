@@ -1,8 +1,0 @@
-{
-	"nodes":[
-		{"id":"node1","type":"text","text":"# 🚀 Study Dashboard\nWelkom Tim! Dit is je command center.\n\nSleep actieve vakken of todo's hierheen.","x":-200,"y":-200,"width":400,"height":200,"color":"1"},
-		{"id":"node2","type":"group","label":"🔥 Actief","x":-220,"y":40,"width":440,"height":400,"color":"2"},
-		{"id":"node3","type":"text","text":"## 📥 Inbox Check\n- [ ] Screenshots verwerkt?\n- [ ] Downloads hernoemd?\n- [ ] Losse hersenspinsels een plek gegeven?","x":260,"y":-200,"width":300,"height":300,"color":"4"}
-	],
-	"edges":[]
-}

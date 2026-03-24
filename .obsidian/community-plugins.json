@@ -1,3 +1,8 @@
 [
-  "opencode-obsidian"
+  "dataview",
+  "obsidian-tasks-plugin",
+  "markitdown",
+  "agent-client",
+  "gemini-scribe",
+  "jupymd"
 ]

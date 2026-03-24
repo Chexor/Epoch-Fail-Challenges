@@ -1,8 +1,17 @@
-# Obsidian cache/workspace
-.obsidian/cache/
-.obsidian/workspace
+# Obsidian local state
 .obsidian/workspace.json
+.obsidian/graph.json
+.obsidian/page-preview.json
+.obsidian/daily-notes.json
+.obsidian/switcher.json
+.obsidian/templates.json
+.obsidian/types.json
+.obsidian/plugins/
 
-# OS cruft
-.DS_Store
-Thumbs.db
+# Local tool output
+gemini-scribe/
+worktrees/
+
+# Node artifacts
+node_modules/
+package-lock.json

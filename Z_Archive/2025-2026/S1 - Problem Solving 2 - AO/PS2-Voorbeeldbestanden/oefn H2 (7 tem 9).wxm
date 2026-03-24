@@ -1,0 +1,184 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 16.04.2 ] */
+
+/* [wxMaxima: title   start ]
+H2: Determinant
+(uitgewerkte oplossingen)
+   [wxMaxima: title   end   ] */
+
+/* [wxMaxima: section start ]
+) oef 7
+   [wxMaxima: section end   ] */
+
+/* [wxMaxima: comment start ]
+Niet waar, voor voorbeeld zie oefening 1
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: section start ]
+) oef 8
+   [wxMaxima: section end   ] */
+
+/* [wxMaxima: comment start ]
+Waar!
+
+Bewijs: A is nilpotent 
+=> er bestaat een index p zodanig dat A^p=0
+=> det(A^p)=det(0)=0
+=> det(A.A...A.A)=0
+=> det(A).det(A)...det(A).det(A)=0
+=> det(A)^p=0
+=> det(A)=0
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: section start ]
+) oef 9
+   [wxMaxima: section end   ] */
+
+/* [wxMaxima: subsect start ]
+(a)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(A)=0 omdat de rijen lineair afhankelijk zijn van elkaar, nl. R1=-R3
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+A: matrix(
+ [2,4,3], 
+ [4,3,2], 
+ [-2,-4,-3]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(A);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: subsect start ]
+(b)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(B)=0 omdat de rijen lineair afhankelijk zijn van elkaar, nl. R3=R1+R2
+(of omdat de kolommen lineair afhankelijk zijn van elkaar, nl. K3=K2+2K1)
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+B: matrix(
+ [-1,2,0], 
+ [3,1,7], 
+ [2,3,7]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(B);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: subsect start ]
+(c)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(C)=0 omdat de rijen lineair afhankelijk zijn van elkaar, nl. R2-R1=R3-R2
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+C: matrix(
+ [1,2,3], 
+ [4,5,6], 
+ [7,8,9]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(C);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: subsect start ]
+(d)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(D)=0 omdat de matrix D een nulkolom bevat
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+D: matrix(
+ [-2,1,0,3], 
+ [0,-3,0,4], 
+ [0,2,0,0], 
+ [4,0,0,-1]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(D);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: subsect start ]
+(e)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(E)=0 omdat de rijen en de kolommen lineair afhankelijk zijn,
+nl. R2=2R1, K3=3K1,...
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+E: matrix(
+ [1,2,3], 
+ [2,4,6], 
+ [3,6,9]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(E);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: subsect start ]
+(f)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(F)=0 
+omdat F de getransformeerde is van A of
+omdat de kolommen van F lineair afhankelijk zijn, nl. K2-K1=K3-K2
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+F: matrix(
+ [1,4,7], 
+ [2,5,8], 
+ [3,6,9]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(F);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: subsect start ]
+(g)
+   [wxMaxima: subsect end   ] */
+
+/* [wxMaxima: comment start ]
+det(G)=0 omdat G een nulrij bevat
+   [wxMaxima: comment end   ] */
+
+/* [wxMaxima: input   start ] */
+G: matrix(
+ [2,0,-1,3], 
+ [-2,1,4,0], 
+ [0,0,0,0], 
+ [0,-1,0,2]
+);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+determinant(G);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

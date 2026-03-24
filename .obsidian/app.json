@@ -1,10 +1,8 @@
 {
-  "promptDelete": false,
-  "attachmentFolderPath": "30_Resources/Images",
-  "newFileLocation": "current",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "uriCallbacks": true,
-  "foldIndent": false,
-  "showInlineTitle": false
+  "promptDelete": false,
+  "attachmentFolderPath": "30_Resources",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_Inbox"
 }

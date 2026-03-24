@@ -1,3 +1,0 @@
-# Gemiddelde
-
-Zie: [[Centrummaten#Gemiddelde]].
