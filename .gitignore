@@ -15,3 +15,6 @@ worktrees/
 # Node artifacts
 node_modules/
 package-lock.json
+
+# Archives
+*.zip
