@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1774443217999,
+      "items": [
+        {
+          "type": "folder",
+          "ctime": 1774614871235,
+          "path": "10_Modules/S1 - Introduction to AI - AO",
+          "title": "Introduction to AI (AO)"
+        },
+        {
+          "type": "folder",
+          "ctime": 1774614925417,
+          "path": "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding",
+          "title": "AI - Examenvoorbereiding"
+        },
+        {
+          "type": "folder",
+          "ctime": 1774443194872,
+          "path": "10_Modules/S2 - Machine Learning Fundamentals",
+          "title": "ML - Machine Learning Fundamentals"
+        }
+      ],
+      "title": "Modules"
+    },
+    {
+      "type": "folder",
+      "ctime": 1774624449985,
+      "path": "20_Domains",
+      "title": "Domains"
+    }
+  ]
+}

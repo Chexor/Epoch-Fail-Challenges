@@ -1,0 +1,87 @@
+// Chocolateboiler met boil-strategy en null object 
+//  voor de strategy.
+
+
+// De strategy interface
+public interface BoilStrategy {
+	void boil();
+}
+
+// Een concrete strategy
+public class SomeBoilStrategy implements BoilStrategy {
+	public void boil() {
+		// do boiling stuff
+	}
+}
+
+// Een concrete Null-Strategy
+public class NullBoilStrategy implements BoilStrategy {
+	public void boil() {
+		// hier gebeurt niks.
+	}
+}
+
+// De context-klasse
+public class ChocolateBoiler {
+	private boolean empty;
+	private boolean boiled;
+	// De context-klasse wordt samengesteld met een strategy (interface!)
+	private BoilStrategy boilStrategy;
+	
+	// De strategy-setter zorgt er voor dat de strategy at runtime veranderd
+	// kan worden.
+	public void setBoilStrategy(BoilStrategy boilStrategy) {
+		if (boilStrategy != null) {
+			this.boilStrategy = boilStrategy;
+		}
+		else {
+			this.boilStrategy = new NullBoilStrategy;
+		}
+	}
+	
+	public BoilStrategy getBoilStrategy() {
+		return this.boilStrategy;
+	}
+	
+	public ChocolateBoiler() {
+		empty = true;
+		boiled = false;
+		this.boilStrategy = new NullBoilStrategy();
+	}
+	
+	public void fill() {
+		if (isEmpty()) {
+			empty = false;
+			boiled = false;
+		}
+	
+	public void drain() {
+		if (!isEmpty() && isBoiled()) {
+			empty = true;
+			boiled = false;
+		}
+	}
+
+/*	
+	public void boil() {
+		boilStrategy.boil();
+	}
+*/
+
+	// Hier wordt de strategy gebruikt door de context-klasse.
+	public void process() {
+		fill();
+		boilStrategy.boil();
+		drain();
+	}
+	
+	public boolean isEmpty() {
+		return empty;
+	}
+	
+	public boolean isBoiled() {
+		return boiled;
+	}
+}
+
+	

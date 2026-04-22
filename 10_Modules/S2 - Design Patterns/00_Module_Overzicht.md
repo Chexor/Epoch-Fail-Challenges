@@ -9,9 +9,9 @@ semester: 2
 # Module Overzicht: Design Patterns
 
 - **Docent:** [[Pieter Lust]]
-- **Lessen:** [[10_Modules/S2 - Design Patterns/Lessen/|Lessen/]]
-- **Patronen:** [[10_Modules/S2 - Design Patterns/Patronen/|Patronen/]]
-- **Oefeningen:** [[10_Modules/S2 - Design Patterns/Oefeningen/|Oefeningen/]]
+- **Lessen:** [[10_Modules/S2 - Design Patterns/|Lesmappen (DP - Les X)]]
+- **Patronen:** [[10_Modules/S2 - Design Patterns/Patterns/|Patterns/]]
+- **Oefeningen:** [[10_Modules/S2 - Design Patterns/03_Oefeningen/|03_Oefeningen/]]
 - **Handboek:** [[30_Resources/E-books/Design Patterns with Java - An Introduction.pdf|Design Patterns with Java - An Introduction]]
 - **Examenfocus:** [[Software Design Principles/SOLID Principes|SOLID Principes]]
 
@@ -64,7 +64,9 @@ sort by due
 
 ```dataview
 LIST
-FROM "10_Modules/S2 - Design Patterns/Lessen"
+FROM "10_Modules/S2 - Design Patterns"
+WHERE contains(file.folder, "DP - Les ")
+AND file.ext = "md"
 SORT file.name ASC
 ```
 
@@ -74,7 +76,7 @@ SORT file.name ASC
 
 ```dataview
 LIST
-FROM "10_Modules/S2 - Design Patterns/Patronen"
+FROM "10_Modules/S2 - Design Patterns/Patterns"
 SORT file.name ASC
 ```
 
@@ -84,7 +86,7 @@ SORT file.name ASC
 
 ```dataview
 LIST
-FROM "10_Modules/S2 - Design Patterns/Oefeningen"
+FROM "10_Modules/S2 - Design Patterns/03_Oefeningen"
 WHERE file.ext = "md"
 SORT file.name ASC
 ```

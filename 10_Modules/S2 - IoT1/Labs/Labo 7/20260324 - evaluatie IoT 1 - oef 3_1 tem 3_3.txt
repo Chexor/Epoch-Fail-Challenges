@@ -1,0 +1,14 @@
+1.	Gebruik voor deze vraag gelijk welk STM32-project, waarbij de SPI-bus ingeschakeld wordt.
+	Zet daarbij een breakpoint op een weloverwogen locatie, waarbij je in de functie InitSpi1(), 
+	de SPE-bit uit het CR1-register mooi ziet omschakelen van 0 naar 1.
+	
+	Waarvoor zorgt deze SPE-bit precies?
+		
+2. 	Als we JP1 van het Nucleo Extension Shield willen gebruiken om SPI-communicatie op te zetten 
+	met SPI1, op welke pin zal er dan mogelijks data vanuit een sensor naar de microcontroller
+	passeren? Bewijs aan de hand van het schema van het Nucleo Extension Shield.
+	
+	
+3.	Op het Nucleo Extension Shield is er één opstelling gemaakt die we als analoge ingang kunnen
+	verwerken in onze microcontroller. Wat weet je hierover? Gebruik zeker ook het schema van het
+	Nucleo Extension Shield om je uitleg doen.

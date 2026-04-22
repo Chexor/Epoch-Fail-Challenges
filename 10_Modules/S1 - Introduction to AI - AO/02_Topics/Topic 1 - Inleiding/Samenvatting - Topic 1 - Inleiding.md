@@ -7,7 +7,7 @@ status: in-progress
 
 # H1: Introductie tot AI
 
-Up: [[00_Module_Overzicht]]
+Up: [[10_Modules/S2 - IoT1/00_Module_Overzicht]]
 
 ## 1. Wat is Artificiële Intelligentie?
 

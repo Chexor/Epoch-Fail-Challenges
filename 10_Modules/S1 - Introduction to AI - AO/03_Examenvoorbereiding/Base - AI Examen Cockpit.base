@@ -1,0 +1,204 @@
+filters:
+  and:
+    - file.ext == "md"
+    - or:
+        - file.path.startsWith("10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/")
+        - file.path.startsWith("20_Domains/Artificial Intelligence/")
+        - file.path.startsWith("20_Domains/Machine Learning/")
+properties:
+  file.name:
+    displayName: Note
+  domain:
+    displayName: Domain
+  type:
+    displayName: Type
+  parent:
+    displayName: Parent
+  theme:
+    displayName: Theme
+  file.path:
+    displayName: Path
+views:
+  - type: table
+    name: Start Hier
+    filters:
+      and:
+        - or:
+            - file.path == "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/00_Centrale examensamenvatting.md"
+            - file.path == "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/01_Focus voor vrijdag.md"
+            - file.path == "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/03_Algoritmes herkennen aan code.md"
+            - file.path == "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/04_Frontier correct uitschrijven op papier.md"
+            - file.path == "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/00b_Synthese - The Story of AI.md"
+            - file.path == "10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/06_Examenvoorbeeld - Oefeningen Uitgewerkt.md"
+    order:
+      - file.name
+      - type
+      - file.path
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Examenhulpmiddelen
+    filters:
+      and:
+        - file.path.startsWith("10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/")
+    order:
+      - file.name
+      - type
+      - file.path
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: AI Kernconcepten
+    filters:
+      and:
+        - domain == "artificial-intelligence"
+        - type == "concept-topic"
+        - or:
+            - file.name == "State Space"
+            - file.name == "Search Algorithm"
+            - file.name == "Frontier"
+            - file.name == "Explored Set"
+            - file.name == "Path Cost"
+            - file.name == "Branching Factor"
+            - file.name == "Heuristic"
+            - file.name == "g(n)"
+            - file.name == "h(n)"
+            - file.name == "f(n)"
+            - file.name == "Admissible Heuristic"
+            - file.name == "Consistent Heuristic"
+    order:
+      - file.name
+      - parent
+      - theme
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Topalgoritmes
+    filters:
+      and:
+        - domain == "artificial-intelligence"
+        - type == "concept-topic"
+        - or:
+            - file.name == "Breadth-First Search (BFS)"
+            - file.name == "Depth-First Search (DFS)"
+            - file.name == "Uniform-Cost Search (UCS)"
+            - file.name == "Hill Climbing"
+            - file.name == "Greedy Best-First Search"
+            - file.name == "A-star Search"
+            - file.name == "Depth-Limited Search (DLS)"
+            - file.name == "Iterative Deepening Search (IDS)"
+            - file.name == "Bi-directional Search"
+            - file.name == "IDA-star (Iterative Deepening A-star)"
+    order:
+      - file.name
+      - parent
+      - theme
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Worked Examples
+    filters:
+      and:
+        - domain == "artificial-intelligence"
+        - type == "concept-execution"
+    order:
+      - file.name
+      - theme
+      - file.path
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Met Python-code
+    filters:
+      and:
+        - or:
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Breadth-First Search (BFS).md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Depth-First Search (DFS).md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Uniform-Cost Search (UCS).md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Depth-Limited Search (DLS).md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Iterative Deepening Search (IDS).md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Hill Climbing.md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/Greedy Best-First Search.md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/A-star Search.md"
+            - file.path == "20_Domains/Artificial Intelligence/02_Theory/IDA-star (Iterative Deepening A-star).md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/BFS Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/DFS Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/UCS Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/IDS Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/Hill Climbing Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/Greedy Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/A-star Python Worked Example.md"
+            - file.path == "20_Domains/Artificial Intelligence/04_Practice/IDA-star Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/Linear Regression.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/K-Nearest Neighbors (KNN).md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/K-Means.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/Neural Network.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/Gradient Descent.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/ReLU.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/Transformer.md"
+            - file.path == "20_Domains/Machine Learning/02_Theory/Attention.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/Linear Regression Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/KNN Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/K-Means Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/Neural Network Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/Gradient Descent Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/ReLU Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/Transformer Python Worked Example.md"
+            - file.path == "20_Domains/Machine Learning/04_Practice/Attention Python Worked Example.md"
+            - file.path == "20_Domains/Computer Science/02_Theory/Queue.md"
+            - file.path == "20_Domains/Computer Science/02_Theory/Stack.md"
+            - file.path == "20_Domains/Computer Science/02_Theory/Priority Queue.md"
+    order:
+      - file.name
+      - type
+      - parent
+      - file.path
+    sort:
+      - property: type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Vergelijkingen
+    filters:
+      and:
+        - domain == "artificial-intelligence"
+        - type == "concept-comparison"
+    order:
+      - file.name
+      - theme
+      - file.path
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: ML Compact
+    filters:
+      and:
+        - domain == "machine-learning"
+        - or:
+            - file.name == "Machine Learning"
+            - file.name == "Supervised Learning"
+            - file.name == "Unsupervised Learning"
+            - file.name == "Reinforcement Learning"
+            - file.name == "Supervised vs Unsupervised vs Reinforcement Learning"
+            - file.name == "Machine Learning vs Deep Learning"
+            - file.name == "Classification vs Regression"
+            - file.name == "Linear Regression"
+            - file.name == "K-Nearest Neighbors (KNN)"
+            - file.name == "K-Means"
+            - file.name == "Neural Network"
+            - file.name == "Deep Learning"
+            - file.name == "Convolutional Neural Network (CNN)"
+    order:
+      - file.name
+      - type
+      - parent
+    sort:
+      - property: type
+        direction: ASC

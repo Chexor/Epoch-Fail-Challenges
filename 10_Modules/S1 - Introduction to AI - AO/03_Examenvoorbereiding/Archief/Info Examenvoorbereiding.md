@@ -21,13 +21,13 @@
 
 ## Theorie-opfrissing
 
-Voor inhoudelijke verdieping gebruik je best de neutrale conceptnotes in `20_Concepts/`:
+Voor inhoudelijke verdieping gebruik je best de neutrale conceptnotes in `20_Domains/`:
 
 - [[00_Overzicht Artificial Intelligence]]
 - [[State Space]]
 - [[Search Algorithm]]
 - [[BFS vs DFS vs UCS vs Greedy vs A-star|BFS vs DFS vs UCS vs Greedy vs A*]]
-- [[Heuristiek]]
+- [[Heuristic]]
 - [[Admissible Heuristic]] en [[Consistent Heuristic]]
 
 ## Waarschijnlijke opbouw van het examen

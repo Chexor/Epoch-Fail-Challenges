@@ -58,7 +58,7 @@ sort by due
 ```
 
 ## 🧠 Concepten (Atomic Notes)
-*Link hier naar bestanden in 20_Concepts*
+*Link hier naar bestanden in 20_Domains*
 - [[Populatie vs Steekproef]]
 - [[Meetniveaus]]
 - [[Centrummaten]]

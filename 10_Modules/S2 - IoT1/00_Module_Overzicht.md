@@ -70,5 +70,5 @@ sort by due
 
 - Info: [[Info]]
 - Lessen: [[Lessen]]
-- Oefeningen: [[Oefeningen]]
+- Oefeningen: [[Oefeningen - Uitwerking]]
 - Oplossingen: [GitHub Repo](https://github.com/Chexor/IoT1)

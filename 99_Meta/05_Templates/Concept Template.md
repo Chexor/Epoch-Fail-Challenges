@@ -1,18 +1,20 @@
 ---
-type: concept-topic
+type: theory
 domain: "{{domain}}"
 parent:
-related: []
+related:
+  - {{related_1}}
+  - {{related_2}}
+  - {{related_3}}
 theme: "{{theme}}"
-aliases: []
+aliases:
+  - {{title}}
 ---
 
 # {{title}}
 #concept #{{domain_tag}}
 
-{{title}} is/gaat over ... in 1 heldere zin. Deze zin moet zelfstandig bruikbaar zijn in een backlink pop-up.
-
-> Gebruik `parent` voor de primaire inhoudelijke kapstok. `siblings` en `children` worden afgeleid via dezelfde parentrelaties en horen dus niet als aparte metadata in de note.
+{{title}} is ... — één zelfstandige zin, leesbaar als backlink pop-up.
 
 ## Korte kern
 
@@ -20,25 +22,25 @@ aliases: []
 - kernpunt 2
 - kernpunt 3
 
-## 1. Wat is het kernprobleem?
-*Welke vraag beantwoordt dit concept?*
+## Probleem
 
-## 2. Intuitieve uitleg
-*Leg het concept eenvoudig uit, zonder te snel formeel te worden.*
+Welke vraag of nood beantwoordt dit concept?
 
-## 3. Formele structuur
-*Definities, formule(s), eigenschappen, notatie.*
+## Intuïtie
 
-## 4. Snelle vergelijking
-*Optioneel. Gebruik dit alleen als het concept vaak verward wordt met verwante concepten.*
-- [[Concept A]] = ...
-- [[Concept B]] = ...
-- [[Concept C]] = ...
+Leg het concept eenvoudig uit, zonder te snel formeel te worden.
 
-## 5. Toepassing
-*Geef een klein, concreet voorbeeld dat het concept tastbaar maakt.*
+## Toepassing
 
-## 6. Begripsafbakening en verbanden
-- **Kernonderscheid:** ...
-- **Veelvoorkomende misvatting:** ...
-- **Link met andere concepten:** [[...]], [[...]], [[...]]
+Geef een klein, concreet voorbeeld dat het concept tastbaar maakt.
+
+## Formeel
+
+- definitie(s)
+- formule(s) en notatie
+- eigenschappen of stappen
+
+## Verbanden
+
+- [[gerelateerd concept 1]]
+- [[gerelateerd concept 2]]

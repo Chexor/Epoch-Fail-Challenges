@@ -1,7 +1,9 @@
 ---
 type: lesnotitie
 vak: "{{VAKNAAM}}"
+vakafkorting: "{{VAKAFKORTING}}"
 les: "{{LESNUMMER}}"
+thema: "{{LES_THEMA}}"
 datum:
 docent: ""
 status: actief
@@ -9,56 +11,47 @@ parent: "[[10_Modules/{{MODULEMAP}}/00_Module_Overzicht|{{VAKNAAM}}]]"
 related: []
 ---
 
-# {{VAKNAAM}} - Les {{LESNUMMER}} - {{LES_TITEL}}
+# {{VAKAFKORTING}}-Les{{LESNUMMER}}-{{LES_THEMA}}
 #{{module_tag}} #lesnotitie
 
+> Naamgeving:
+> - Lesfolder: `{{VAKAFKORTING}} - Les {{LESNUMMER}} - {{LES_THEMA}}`
+> - Lesnotitie: `{{VAKAFKORTING}}-Les{{LESNUMMER}}-{{LES_THEMA}}.md`
+> - Deze naamgeving volgt `99_Meta/03_Content/Vault Content Conventions.md`.
+
 ## Lescontext
-- **Datum:**
-- **Thema:**
-- **Docent:**
-- **Status:** live capture
+- **Thema**:
+- **Presentaties:**
 - **Bronnen:**
 
-## Snelle capture
-
-### Doelen van deze les
+## Kernbegrippen
 - 
 
-### Live notities
+## Lesnotities
+
+### 4.1 Losse notities (ruwe capture)
 - 
 
-### Kernbegrippen
+### 4.2 Concepts (te valideren)
 - 
 
-### Voorbeelden en demo's
+## Exameninfo
 - 
 
-### Vragen tijdens de les
-- [ ] 
+## Oefeningen (tijdens de les)
+- [ ]
 
-### Acties / taken
-- [ ] 
+## Opdrachten (om thuis af te werken)
+- [ ]
 
 ---
 
-## Uitwerking na de les
-
-### 1. Groot plaatje
-*Welk probleem of welk groter onderwerp staat centraal in deze les?*
-
-### 2. Intuitie
-*Leg de kernideeën eerst eenvoudig uit, nog zonder te veel detail.*
-
-### 3. Formele structuur
-*Definities, syntax, formules, stappenplannen, architectuur of technische details.*
-
-### 4. Toepassing
-*Voorbeelden, demo's, oefeningen, code, of concrete use-cases uit de les.*
-
-### 5. Examenfocus
-- **Te kennen:**
-- **Typische valkuilen:**
-- **Mogelijke examenvraag:**
+## Verwerking na de les
+- [ ] Lesnotities opschonen en structureren
+- [ ] Kernbegrippen linken aan bestaande conceptnotes
+- [ ] Nieuwe conceptnotes aanmaken waar nodig
+- [ ] Relevante info routeren naar module- of conceptniveau
+- [ ] Oefeningen en opdrachten finaliseren met status
 
 ## Links
 - **Module:** [[10_Modules/{{MODULEMAP}}/00_Module_Overzicht|{{VAKNAAM}}]]

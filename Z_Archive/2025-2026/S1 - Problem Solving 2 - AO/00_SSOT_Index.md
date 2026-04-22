@@ -29,7 +29,7 @@ Hieronder linken we naar de herbruikbare concept-notes in `20_Concepts/`.
 -   [[Eenheidsmatrix]]
 -   [[Inverse matrix]]
 -   [[Determinant: betekenis + berekening]]
--   [[Singulier vs inverteerbaar]]
+-   [[Singulier vs Inverteerbaar]]
 -   [[Gauss(-Jordan) eliminatie / rref (conceptueel)]]
 
 ### Discrete Wiskunde (`#discrete`)

@@ -23,6 +23,9 @@ ects:
 
 - `01_Lessen/`
 - Elke les krijgt een eigen lesmap binnen `01_Lessen/` met daarin altijd een lesnotitie als ankerbestand.
+- Naamgeving voor nieuwe lessen:
+  - Lesfolder: `[vakafkorting] - Les [#] - [thema]`
+  - Lesnotitie: `[vakafkorting]-Les[#]-[thema].md`
 - `02_Samenvattingen/`
 - `03_Oefeningen/`
 - `04_Bronnen/`
@@ -31,8 +34,8 @@ Voorbeeld:
 
 ```text
 01_Lessen/
-  Les 1/
-    Lesnotitie.md
+  ML - Les 1 - Intro/
+    ML-Les1-Intro.md
 ```
 
 Gebruik hiervoor `99_Meta/05_Templates/Lesnotitie Template.md`.

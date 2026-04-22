@@ -7,7 +7,7 @@ status: afgerond
 
 # Samenvatting Topic 2: Machine Learning & Deep Learning
 
-Up: [[00_Module_Overzicht]]
+Up: [[10_Modules/S2 - IoT1/00_Module_Overzicht]]
 
 Deze samenvatting behandelt de fundamenten van Machine Learning en Deep Learning, gebaseerd op de slides van Topic 2a en 2b.
 

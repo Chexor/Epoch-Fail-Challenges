@@ -1,0 +1,18 @@
+Set up my OpenCode credentials from my synced Obsidian vault.
+
+Requirements:
+1) Find this folder in my Obsidian vault:
+   99_Meta/04_Operations/Tooling/opencode-secrets
+2) Verify these files exist there:
+   - sync_opencode_secrets.sh
+   - restore_opencode_secrets.sh
+   - opencode-secrets-latest.tar.gpg
+   - opencode-sync-passphrase
+3) Make both scripts executable.
+4) Load passphrase from opencode-sync-passphrase into OPENCODE_SYNC_PASSPHRASE and run restore_opencode_secrets.sh (use default bundle path if already correct; otherwise pass the full bundle path).
+5) After restore, run:
+   - source ~/.zshrc
+   - opencode mcp list
+6) Report exactly what was restored and whether context7 is connected.
+
+Do not modify unrelated files.

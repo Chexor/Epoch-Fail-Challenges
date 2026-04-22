@@ -1,8 +1,8 @@
 [
   "dataview",
   "obsidian-tasks-plugin",
-  "markitdown",
   "agent-client",
-  "gemini-scribe",
-  "jupymd"
+  "jupymd",
+  "obsidian-icon-folder",
+  "obsidian-git"
 ]

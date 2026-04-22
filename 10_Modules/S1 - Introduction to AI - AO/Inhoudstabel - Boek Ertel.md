@@ -4,7 +4,7 @@ vak: Introduction to AI
 bron: boek
 status: actief
 related:
-  - "[[00_Module_Overzicht]]"
+  - "[[10_Modules/S1 - Introduction to AI - AO/00_Module_Overzicht]]"
 ---
 
 # Inhoudstabel - Boek Ertel

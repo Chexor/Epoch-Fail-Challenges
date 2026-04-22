@@ -30,7 +30,7 @@ Gebruik deze conceptnotes voor duurzame verdieping buiten deze examennota:
 - Overzicht AI: [[00_Overzicht Artificial Intelligence]]
 - Basis: [[Artificial Intelligence (AI)]], [[State Space]], [[Search Algorithm]], [[Branching Factor]]
 - Search: [[Breadth-First Search (BFS)]], [[Depth-First Search (DFS)]], [[Uniform-Cost Search (UCS)]], [[Depth-Limited Search (DLS)]], [[Iterative Deepening Search (IDS)]], [[Bi-directional Search]]
-- Heuristieken: [[Heuristiek]], [[Hill Climbing]], [[Greedy Best-First Search]], [[A-star Search|A* Search]], [[IDA-star (Iterative Deepening A-star)|IDA* (Iterative Deepening A*)]], [[Admissible Heuristic]], [[Consistent Heuristic]]
+- Heuristieken: [[Heuristic]], [[Hill Climbing]], [[Greedy Best-First Search]], [[A-star Search]], [[IDA-star (Iterative Deepening A-star)]], [[Admissible Heuristic]], [[Consistent Heuristic]]
 - Vergelijkingen: [[BFS vs DFS vs UCS vs Greedy vs A-star|BFS vs DFS vs UCS vs Greedy vs A*]], [[BFS vs UCS]], [[Hill Climbing vs Greedy Best-First Search]], [[Admissible vs Consistent Heuristic]]
 - ML-brug: [[00_Overzicht Machine Learning Concepten]], [[Machine Learning]], [[Neural Network]], [[Deep Learning]], [[Convolutional Neural Network (CNN)]], [[K-Nearest Neighbors (KNN)]], [[K-Means]]
 

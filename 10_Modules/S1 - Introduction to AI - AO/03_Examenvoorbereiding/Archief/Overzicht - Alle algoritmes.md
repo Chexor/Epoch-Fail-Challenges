@@ -27,8 +27,8 @@ Voor het examen ligt de zwaarste focus op de **zoekalgoritmes**. Daar moet je te
 - AI-overzicht: [[00_Overzicht Artificial Intelligence]]
 - Zoekbasis: [[Search Algorithm]], [[State Space]], [[Frontier]], [[Explored Set]], [[Path Cost]], [[Branching Factor]]
 - Datastructuren: [[Queue]], [[Stack]], [[Priority Queue]]
-- Heuristieken: [[Heuristiek]], [[g(n)]], [[h(n)]], [[f(n)]], [[Admissible Heuristic]], [[Consistent Heuristic]]
-- Zoekalgoritmes: [[Breadth-First Search (BFS)]], [[Depth-First Search (DFS)]], [[Uniform-Cost Search (UCS)]], [[Depth-Limited Search (DLS)]], [[Iterative Deepening Search (IDS)]], [[Bi-directional Search]], [[Hill Climbing]], [[Greedy Best-First Search]], [[A-star Search|A* Search]], [[IDA-star (Iterative Deepening A-star)|IDA* (Iterative Deepening A*)]]
+- Heuristieken: [[Heuristic]], [[g(n)]], [[h(n)]], [[f(n)]], [[Admissible Heuristic]], [[Consistent Heuristic]]
+- Zoekalgoritmes: [[Breadth-First Search (BFS)]], [[Depth-First Search (DFS)]], [[Uniform-Cost Search (UCS)]], [[Depth-Limited Search (DLS)]], [[Iterative Deepening Search (IDS)]], [[Bi-directional Search]], [[Hill Climbing]], [[Greedy Best-First Search]], [[A-star Search]], [[IDA-star (Iterative Deepening A-star)]]
 - Vergelijkingen: [[Tree Search vs Graph Search]], [[BFS vs UCS]], [[Hill Climbing vs Greedy Best-First Search]], [[Admissible vs Consistent Heuristic]]
 - ML-overzicht: [[00_Overzicht Machine Learning Concepten]], [[Supervised vs Unsupervised vs Reinforcement Learning]], [[Classification vs Regression]]
 
@@ -58,7 +58,7 @@ Daaruit volgen bijna alle eigenschappen.
 
 ## 3. Ongeïnformeerd zoeken
 
-Deze algoritmes gebruiken **geen [[Heuristiek]]**. Ze kijken alleen naar de structuur van de [[Graaf]] en eventueel naar de echte [[Path Cost|padkosten]].
+Deze algoritmes gebruiken **geen [[Heuristic]]**. Ze kijken alleen naar de structuur van de [[Graaf]] en eventueel naar de echte [[Path Cost|padkosten]].
 
 ## Breadth-First Search (BFS)
 
@@ -247,7 +247,7 @@ In plaats van van 1 kant te zoeken, zoek je tegelijk van **start** en van **doel
 
 ## 4. Geinformeerd zoeken
 
-Deze algoritmes gebruiken een [[Heuristiek]] `[[h(n)]]`: een schatting van de resterende kost tot het doel.
+Deze algoritmes gebruiken een [[Heuristic]] `[[h(n)]]`: een schatting van de resterende kost tot het doel.
 
 ## Hill Climbing
 
@@ -260,7 +260,7 @@ Hill Climbing kijkt enkel naar de **huidige node** en zijn **directe buren**. He
 ### Opbouw
 - geen volledige frontier zoals BFS of A*
 - gebruikt alleen de huidige toestand en de buurtoestanden
-- gebruikt een [[Heuristiek]] `[[h(n)]]`
+- gebruikt een [[Heuristic]] `[[h(n)]]`
 
 ### Werking
 1. Start in de beginnode.
@@ -432,7 +432,7 @@ Een heuristiek is **consistent** als de geschatte kost niet sneller daalt dan de
 
 ## 6. Machine Learning algoritmes
 
-Deze komen ook in de module voor, maar zijn voor het examen meestal minder centraal dan de zoekalgoritmes. Ze linken wel door naar duurzame concepten in `20_Concepts/Machine Learning`.
+Deze komen ook in de module voor, maar zijn voor het examen meestal minder centraal dan de zoekalgoritmes. Ze linken wel door naar duurzame concepten in `20_Domains/Machine Learning`.
 
 ## Linear Regression
 
@@ -575,7 +575,7 @@ Een gespecialiseerd neuraal netwerk voor beelden in [[Convolutional Neural Netwo
 
 ## Conceptlinks
 - Overzicht AI: [[00_Overzicht Artificial Intelligence]]
-- Basis: [[Search Algorithm]], [[State Space]], [[Frontier]], [[Explored Set]], [[Heuristiek]], [[Branching Factor]]
+- Basis: [[Search Algorithm]], [[State Space]], [[Frontier]], [[Explored Set]], [[Heuristic]], [[Branching Factor]]
 - Datastructuren: [[Queue]], [[Stack]], [[Priority Queue]]
 - Heuristieken: [[g(n)]], [[h(n)]], [[f(n)]], [[Admissible Heuristic]], [[Consistent Heuristic]]
 - Vergelijkingen: [[Tree Search vs Graph Search]], [[BFS vs UCS]], [[Hill Climbing vs Greedy Best-First Search]], [[Admissible vs Consistent Heuristic]]

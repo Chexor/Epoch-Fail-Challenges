@@ -7,35 +7,64 @@ status: actief
 
 # Centrale examensamenvatting
 
+> [!info]- Inhoudsopgave
+> - [[#1. Wat lijkt het examen te testen?]]
+> - [[#2. Hoofdprioriteiten voor het examen]]
+> 	- [[#Prioriteit 1 - Search en heuristieken]]
+> 	- [[#Prioriteit 2 - Zoekalgoritmes]]
+> 	- [[#Prioriteit 3 - Machine Learning en neural nets]]
+> - [[#3. Wat je van elk zoekalgoritme altijd moet kennen]]
+> - [[#4. Kernoverzicht van de zoekalgoritmes]]
+> - [[#5. Zoekalgoritmes die je absoluut operationeel moet kunnen uitvoeren]]
+> 	- [[#Wat je op papier moet tonen]]
+> 	- [[#Wat je per algoritme moet noteren]]
+> 	- [[#Als je code krijgt in plaats van een graaf]]
+> 	- [[#Veilige examenmethode]]
+> - [[#6. Kritieke concepten die je mondeling moet kunnen uitleggen]]
+> 	- [[#Search-basis]]
+> 	- [[#Algoritme-eigenschappen]]
+> 	- [[#Heuristieken]]
+> - [[#7. Klassieke examenvallen]]
+> - [[#8. Machine Learning - wat je moet kennen, maar compacter]]
+> 	- [[#Extra theorie-begrippen]]
+> 	- [[#Grote lijnen]]
+> 	- [[#Typische probleemtypes]]
+> 	- [[#Algoritmes]]
+> 	- [[#Wat je mondeling moet kunnen zeggen]]
+> - [[#9. Concreet studieplan]]
+> 	- [[#Eerst blokkeren]]
+> 	- [[#Daarna herhalen]]
+> 	- [[#Daarna compact ML herhalen]]
+> - [[#10. Mondelinge checklist]]
+> - [[#11. Gebruik van de conceptnotes]]
+
 > Dit is de centrale examennota voor `Introduction to AI`.
-> Deze note bundelt de kern uit de oudere examendocumenten en verwijst door naar de duurzame conceptnotes in `20_Concepts/`.
+> Deze note bundelt de kern uit de oudere examendocumenten en verwijst door naar de duurzame conceptnotes in `20_Domains/`.
 
 ## 1. Wat lijkt het examen te testen?
 
-Op basis van de exameninformatie lijkt het examen vooral te testen of je:
+Op basis van de officiële exameninformatie (via Teams/ANS):
 
-- zoekalgoritmes **begrijpt**
-- ze **correct kan uitvoeren op een graaf**
-- je redenering **snel en helder kan uitleggen**
-- de belangrijkste theorie **mondeling kan verdedigen**
+**Deel 1: Theorie en Oefeningen (45 minuten, in ANS)**
+- **20 Meerkeuzevragen (Theorie)** (50% van de punten) - *Tijdslimiet: 25 minuten*
+- **Open vragen & Oefeningen Zoekalgoritmen** (50% van de punten) - *Tijdslimiet: 20 minuten*
+  - Bestaat uit: open theorievragen (25%) + effectieve oefeningen (25%).
+  - Mogelijke opdrachten: het opgeven van de Queue voor een bepaald zoekalgoritme, of het bepalen van het gevolgde zoekpad in een maze/graaf.
+  - Python-kennis is *passief*: je moet een fragment Python in de context van zoekalgoritmen kunnen *interpreteren*, je hoeft zelf niet te programmeren.
 
-Waarschijnlijke opbouw:
+**Deel 2: Mondeling (ca. 10 minuten, via Teams)**
+- Korte mondelinge bespreking ter verdediging/toelichting van je antwoorden.
 
-- **meerkeuzevragen** met tijdsdruk
-- **algoritmes uitschrijven** op een graaf
-- **open theorievragen** over algoritmes en eigenschappen
-- **mondelinge toelichting**
-
-Belangrijk gevolg:
-
-- open boek of AI helpt maar beperkt
-- **begrip + snelheid** zijn belangrijker dan opzoeken
+**Hulpmiddelen & Randvoorwaarden:**
+- Open boek: alle cursusmateriaal mag gebruikt worden.
+- Echter: door de harde tijdslimieten per onderdeel is uitgebreid opzoeken niet haalbaar. **Begrip + snelheid** zijn cruciaal.
+- Leerstof omvat alles, inclusief de inleiding. Slides zijn de leidraad.
 
 ---
 
 ## 2. Hoofdprioriteiten voor het examen
 
-## Prioriteit 1 - Search en heuristieken
+### Prioriteit 1 - Search en heuristieken
 
 Dit is veruit het belangrijkste deel.
 
@@ -47,12 +76,12 @@ Je moet zeker kennen:
 - [[Explored Set]]
 - [[Path Cost]]
 - [[Branching Factor]]
-- [[Heuristiek]]
+- [[Heuristic]]
 - [[g(n)]], [[h(n)]], [[f(n)]]
 - [[Admissible Heuristic]]
 - [[Consistent Heuristic]]
 
-## Prioriteit 2 - Zoekalgoritmes
+### Prioriteit 2 - Zoekalgoritmes
 
 Je moet deze algoritmes kunnen herkennen, vergelijken, uitleggen en op papier uitvoeren:
 
@@ -64,10 +93,10 @@ Je moet deze algoritmes kunnen herkennen, vergelijken, uitleggen en op papier ui
 - [[Bi-directional Search]]
 - [[Hill Climbing]]
 - [[Greedy Best-First Search]]
-- [[A-star Search|A* Search]]
-- [[IDA-star (Iterative Deepening A-star)|IDA* (Iterative Deepening A*)]]
+- [[A-star Search]]
+- [[IDA-star (Iterative Deepening A-star)]]
 
-## Prioriteit 3 - Machine Learning en neural nets
+### Prioriteit 3 - Machine Learning en neural nets
 
 Dit is minder operationeel dan search, maar je moet de grote lijnen kennen:
 
@@ -132,7 +161,7 @@ Op basis van de exameninformatie moet je vooral deze heel vlot kunnen uitschrijv
 
 - [[Breadth-First Search (BFS)]]
 - [[Depth-First Search (DFS)]]
-- [[A-star Search|A* Search]]
+- [[A-star Search]]
 - [[Hill Climbing]]
 
 Maar in de praktijk moet je ook klaar zijn voor:
@@ -151,6 +180,10 @@ Als je een graaf krijgt met `start`, `goal`, afstanden en eventueel heuristische
 - het **gevonden pad** noteren
 - bij `UCS` en `A*` ook de **totale kost** geven
 
+Gebruik hiervoor ook:
+
+- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
+
 ### Wat je per algoritme moet noteren
 
 - `BFS`: queue
@@ -159,6 +192,12 @@ Als je een graaf krijgt met `start`, `goal`, afstanden en eventueel heuristische
 - `Greedy`: priority queue + `h(n)`
 - `A*`: priority queue + `g(n)`, `h(n)`, `f(n)`
 - `Hill Climbing`: huidige node + directe buren + beste buur
+
+### Als je code krijgt in plaats van een graaf
+
+Gebruik dan ook:
+
+- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
 
 ### Veilige examenmethode
 
@@ -175,7 +214,7 @@ Gebruik altijd deze aanpak:
 
 ## 6. Kritieke concepten die je mondeling moet kunnen uitleggen
 
-## Search-basis
+### Search-basis
 
 - wat een [[State Space]] is
 - verschil tussen `state`, `initial state`, `goal state`, `operator`, `path`
@@ -183,16 +222,16 @@ Gebruik altijd deze aanpak:
 - wat [[Path Cost]] betekent
 - waarom [[Branching Factor]] belangrijk is
 
-## Algoritme-eigenschappen
+### Algoritme-eigenschappen
 
 - **compleetheid**
 - **optimaliteit**
 - **tijdsefficiëntie**
 - **geheugengebruik**
 
-## Heuristieken
+### Heuristieken
 
-- wat een [[Heuristiek]] is
+- wat een [[Heuristic]] is
 - verschil tussen [[g(n)]], [[h(n)]], [[f(n)]]
 - verschil tussen [[Admissible Heuristic]] en [[Consistent Heuristic]]
 - waarom een heuristiek nuttig is
@@ -215,7 +254,12 @@ Gebruik altijd deze aanpak:
 
 Dit deel lijkt minder zwaar te wegen dan search, maar moet wel gekend zijn op conceptueel niveau.
 
-## Grote lijnen
+### Extra theorie-begrippen
+
+- **ReLU (Rectified Linear Unit):** Activatiefunctie in neurale netwerken. Regel: `f(x) = max(0, x)`. Alles onder nul wordt 0, alles erboven blijft zichzelf.
+- **Heuristiek bepalen:** Grid (vakjes) = Manhattan Distance. Vluchten/Lijnen = Euclidean Distance.
+
+### Grote lijnen
 
 - [[Machine Learning]] = modellen leren patronen uit data
 - [[Supervised Learning]] = leren met labels
@@ -227,13 +271,13 @@ Gebruik hiervoor ook:
 - [[Supervised vs Unsupervised vs Reinforcement Learning]]
 - [[Machine Learning vs Deep Learning]]
 
-## Typische probleemtypes
+### Typische probleemtypes
 
 - [[Classification vs Regression|classification]] = klasse voorspellen
 - [[Classification vs Regression|regression]] = continue waarde voorspellen
 - `clustering` = groepen zoeken in data
 
-## Algoritmes
+### Algoritmes
 
 - [[Linear Regression]] -> supervised, regression
 - [[K-Nearest Neighbors (KNN)]] -> supervised, classificatie/regressie
@@ -241,7 +285,7 @@ Gebruik hiervoor ook:
 - [[Neural Network]] / [[Deep Learning]] -> neurale netwerken
 - [[Convolutional Neural Network (CNN)]] -> beeldherkenning
 
-## Wat je mondeling moet kunnen zeggen
+### Wat je mondeling moet kunnen zeggen
 
 - verschil tussen supervised en unsupervised learning
 - verschil tussen classification, regression en clustering
@@ -253,26 +297,26 @@ Gebruik hiervoor ook:
 
 ## 9. Concreet studieplan
 
-## Eerst blokkeren
+### Eerst blokkeren
 
 1. [[State Space]]
 2. [[Search Algorithm]]
 3. [[Breadth-First Search (BFS)]]
 4. [[Depth-First Search (DFS)]]
 5. [[Uniform-Cost Search (UCS)]]
-6. [[Heuristiek]], [[g(n)]], [[h(n)]], [[f(n)]]
-7. [[Hill Climbing]], [[Greedy Best-First Search]], [[A-star Search|A* Search]]
+6. [[Heuristic]], [[g(n)]], [[h(n)]], [[f(n)]]
+7. [[Hill Climbing]], [[Greedy Best-First Search]], [[A-star Search]]
 8. [[Admissible Heuristic]] en [[Consistent Heuristic]]
 9. [[BFS vs DFS vs UCS vs Greedy vs A-star|BFS vs DFS vs UCS vs Greedy vs A*]]
 
-## Daarna herhalen
+### Daarna herhalen
 
 - [[Iterative Deepening Search (IDS)]]
 - [[Depth-Limited Search (DLS)]]
 - [[Bi-directional Search]]
-- [[IDA-star (Iterative Deepening A-star)|IDA* (Iterative Deepening A*)]]
+- [[IDA-star (Iterative Deepening A-star)]]
 
-## Daarna compact ML herhalen
+### Daarna compact ML herhalen
 
 - [[Machine Learning]]
 - [[Supervised vs Unsupervised vs Reinforcement Learning]]
@@ -292,7 +336,7 @@ Gebruik hiervoor ook:
 - [ ] Ik kan het verschil uitleggen tussen [[Breadth-First Search (BFS)]] en [[Depth-First Search (DFS)]].
 - [ ] Ik kan uitleggen waarom [[Uniform-Cost Search (UCS)]] verschilt van `BFS`.
 - [ ] Ik kan [[g(n)]], [[h(n)]] en [[f(n)]] helder definiëren.
-- [ ] Ik kan [[Greedy Best-First Search]] en [[A-star Search|A* Search]] duidelijk onderscheiden.
+- [ ] Ik kan [[Greedy Best-First Search]] en [[A-star Search]] duidelijk onderscheiden.
 - [ ] Ik kan [[Admissible Heuristic]] en [[Consistent Heuristic]] uitleggen.
 - [ ] Ik kan een frontier stap voor stap uitschrijven op een graaf.
 - [ ] Ik kan zeggen waarom [[Hill Climbing]] geen echte frontier-search is.
@@ -305,7 +349,7 @@ Gebruik hiervoor ook:
 
 Deze centrale note is je **examengerichte overzicht**.
 
-Gebruik `20_Concepts/` zo:
+Gebruik `20_Domains/` zo:
 
 - overview nodig -> [[00_Overzicht Artificial Intelligence]] of [[00_Overzicht Machine Learning Concepten]]
 - 1 algoritme herhalen -> open de specifieke topicnote

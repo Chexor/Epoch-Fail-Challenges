@@ -26,7 +26,7 @@ Voor welke waarde(n) van de parameter `m` is deze matrix **singulier**?
 
 **1. Gebruikte Concepten**
 - [[Determinant: betekenis + berekening]]
-- [[Singulier vs inverteerbaar]]
+- [[Singulier vs Inverteerbaar]]
 
 **2. Stappenplan**
 Een matrix is singulier als haar determinant gelijk is aan 0. We moeten dus de determinant van A berekenen, deze gelijkstellen aan 0, en de vergelijking oplossen voor `m`.
