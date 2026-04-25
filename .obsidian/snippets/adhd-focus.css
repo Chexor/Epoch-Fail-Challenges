@@ -1,0 +1,96 @@
+/* ==========================================================
+   ADHD / ADD Focus Styling voor Obsidian
+   Doel: Visuele rust, structuur en high-contrast ankers.
+========================================================== */
+
+/* 0. LETTERTYPE & LEESBAARHEID
+   Optimaliseert de afstand tussen letters en woorden zodat 
+   tekst minder snel "danst" of samensmelt. */
+body {
+  /* We proberen specifieke ADHD-vriendelijke fonts (Atkinson/Lexend) aan te roepen,
+     met een sterke fallback naar je huidige 'Inter' en cleane systeem-fonts. */
+  --font-text: "Atkinson Hyperlegible", "Lexend", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+.markdown-rendered p, 
+.cm-line {
+  letter-spacing: 0.015em; /* Letters iets verder uit elkaar */
+  word-spacing: 0.05em;    /* Woorden iets verder uit elkaar */
+  line-height: 1.65 !important;
+}
+
+/* 1. BULLET THREADING
+   Trekt een subtiele lijn langs de linkerkant van lijsten
+   zodat je oog altijd weet in welk niveau je zit. */
+.markdown-rendered ul, 
+.markdown-rendered ol {
+  border-left: 2px solid var(--background-modifier-border);
+  padding-left: 1.5em;
+  margin-left: 0.2em;
+}
+
+.markdown-rendered li {
+  margin-bottom: 0.4em; /* Iets meer ademruimte tussen bullets */
+}
+
+/* 2. HIGH-CONTRAST BOLDS (Voor Bionic Reading)
+   Maakt dikgedrukte tekst niet alleen dik, maar geeft het 
+   ook de accentkleur van je thema zodat het er écht uitspringt. */
+strong, 
+.cm-strong {
+  color: var(--text-accent);
+  font-weight: 800 !important;
+}
+
+/* 3. ACTIVE LINE HIGHLIGHT (Tunnelvisie)
+   Geeft de regel waar je nu typt een zachte achtergrondkleur. */
+.cm-active {
+  background-color: var(--background-modifier-hover) !important;
+  border-radius: 4px;
+}
+
+/* 4. GEFORCEERDE ADEMRUIMTE (Whitespace) */
+.markdown-rendered p {
+  margin-bottom: 1.5em !important;
+}
+
+/* 5. VISUELE HIËRARCHIE VOOR HEADINGS
+   Zorgt dat je in één oogopslag ziet of iets een hoofd- 
+   of subsectie is, zonder de tekst te hoeven lezen. */
+
+/* H1: Titel - Massief, dik, en met een duidelijke accentlijn eronder */
+.markdown-rendered h1, 
+.cm-header-1 {
+  font-size: 2.2em !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em; /* Titels mogen strakker */
+  border-bottom: 3px solid var(--text-accent);
+  padding-bottom: 0.2em !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.8em !important;
+}
+
+/* H2: Hoofdsectie - Duidelijke scheidingslijn, rustige kleur */
+.markdown-rendered h2, 
+.cm-header-2 {
+  font-size: 1.6em !important;
+  font-weight: 700 !important;
+  color: var(--text-normal);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.2em !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.8em !important;
+}
+
+/* H3: Subsectie - ALL-CAPS (hoofdletters) en extra spatiëring. 
+   Onderscheidt zich enorm van H2 zonder groter te hoeven zijn. */
+.markdown-rendered h3, 
+.cm-header-3 {
+  font-size: 1.1em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em; /* Brede letters voor een "label" gevoel */
+  color: var(--text-muted);
+  margin-top: 1.8em !important;
+  margin-bottom: 0.5em !important;
+}

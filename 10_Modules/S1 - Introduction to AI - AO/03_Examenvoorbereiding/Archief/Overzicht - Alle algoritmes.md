@@ -432,7 +432,7 @@ Een heuristiek is **consistent** als de geschatte kost niet sneller daalt dan de
 
 ## 6. Machine Learning algoritmes
 
-Deze komen ook in de module voor, maar zijn voor het examen meestal minder centraal dan de zoekalgoritmes. Ze linken wel door naar duurzame concepten in `20_Domains/Machine Learning`.
+Deze komen ook in de module voor, maar zijn voor het examen meestal minder centraal dan de zoekalgoritmes. Ze linken wel door naar duurzame concepten in `20_Wiki/Machine Learning`.
 
 ## Linear Regression
 

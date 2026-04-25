@@ -1,5 +1,10 @@
 {
   "cssTheme": "Things",
   "baseFontSize": 16,
-  "textFontFamily": "Inter"
+  "textFontFamily": "Inter",
+  "enabledCssSnippets": [
+    "e-reader-focus",
+    "TKI_E-Reader",
+    "e-reader-tki"
+  ]
 }

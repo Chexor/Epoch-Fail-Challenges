@@ -2,8 +2,10 @@
 type: concept
 domain: Artificial Intelligence
 parent: "[[10_Modules/S1 - Introduction to AI - AO/00_Module_Overzicht|Introduction to AI]]"
-related: ["[[Samenvatting - Topic 4 - Blind Search]]", "[[Samenvatting - Topic 5a - Vergelijking van Algoritmen]]"]
-big_picture: "Het optimaliseren van blind search door redundante paden te vermijden (Graph Search) en de zoekruimte van twee kanten tegelijk te verkennen (Bi-directional Search)."
+related:
+  - "[[Samenvatting - Topic 4 - Blind Search]]"
+  - "[[Samenvatting - Topic 5a - Vergelijking van Algoritmen]]"
+big_picture: Het optimaliseren van blind search door redundante paden te vermijden (Graph Search) en de zoekruimte van twee kanten tegelijk te verkennen (Bi-directional Search).
 ---
 
 # Samenvatting - Topic 5b - Blind Search 2

@@ -82,7 +82,7 @@ De kern ligt bij:
 - [[01_ECTS_Overzicht_Analysis_Design|Uitgeschreven ECTS-overzicht]]
 - [[02_Studiewijzer_Examfocus_Analysis_Design|Studiewijzer en examfocus]]
 - [[03_Herinnerde_Examenvragen_Eerste_Kans|Herinnerde examenvragen eerste kans]]
-- [[Eindopdracht/01_Herexameninzichten_Eindopdracht|Herexameninzichten uit eindopdracht]]
+- [[01_Herexameninzichten_Eindopdracht|Herexameninzichten uit eindopdracht]]
 
 ## Taken
 ```tasks

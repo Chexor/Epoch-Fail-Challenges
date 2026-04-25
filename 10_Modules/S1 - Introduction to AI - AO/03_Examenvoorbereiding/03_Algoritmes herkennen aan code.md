@@ -229,11 +229,11 @@ Dat is meestal genoeg om snel juist te zitten.
 
 ## 13. Handige vervolgnote
 
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/Base - AI Examen Cockpit.base|Base - AI Examen Cockpit]]
+- [[Base - AI Examen Cockpit.base|Base - AI Examen Cockpit]]
 - [[Breadth-First Search (BFS)]]
 - [[Depth-First Search (DFS)]]
 - [[Uniform-Cost Search (UCS)]]
 - [[Greedy Best-First Search]]
 - [[A-star Search]]
 - [[Hill Climbing]]
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
+- [[04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]

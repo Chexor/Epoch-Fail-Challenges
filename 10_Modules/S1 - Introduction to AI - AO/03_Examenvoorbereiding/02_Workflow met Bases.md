@@ -50,12 +50,12 @@ Dit is de snelste manier om `Maps`, `Bases` en examennota's samen te gebruiken z
 
 ### Laag 2 - Brede studiebasis
 
-- open `20_Domains/Base - Studiebasis AI en ML.base`
+- open `20_Wiki/Base - Studiebasis AI en ML.base`
 - gebruik die wanneer je buiten de examenselectie toch snel wil springen tussen AI en ML
 
 ### Laag 3 - Onderhoud
 
-- open `20_Domains/Base - Metadata Check.base`
+- open `20_Wiki/Base - Metadata Check.base`
 - gebruik deze alleen om notes af te werken of inconsistenties te spotten
 
 ## 2. Aanbevolen gebruik per situatie

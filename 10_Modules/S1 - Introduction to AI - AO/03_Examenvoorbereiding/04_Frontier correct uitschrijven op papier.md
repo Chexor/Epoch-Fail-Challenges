@@ -167,7 +167,7 @@ Voor je doorschuift naar de volgende stap, check:
 - [ ] heb ik nog niet te vroeg gestopt?
 
 ## 11. Handige vervolgnote
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
+- [[03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
 - [[Breadth-First Search (BFS)]]
 - [[Depth-First Search (DFS)]]
 - [[Uniform-Cost Search (UCS)]]

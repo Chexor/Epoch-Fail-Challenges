@@ -2,8 +2,9 @@
 type: concept-comparison
 domain: Artificial Intelligence
 parent: "[[10_Modules/S1 - Introduction to AI - AO/00_Module_Overzicht|Introduction to AI]]"
-related: ["[[Samenvatting - Topic 4 - Blind Search]]"]
-big_picture: "Het vergelijken van verschillende 'blind search' (uninformed) algoritmen om te bepalen welk algoritme het meest geschikt is voor een specifiek probleem op basis van compleetheid, optimaliteit en complexiteit."
+related:
+  - "[[Samenvatting - Topic 4 - Blind Search]]"
+big_picture: Het vergelijken van verschillende 'blind search' (uninformed) algoritmen om te bepalen welk algoritme het meest geschikt is voor een specifiek probleem op basis van compleetheid, optimaliteit en complexiteit.
 ---
 
 # Samenvatting - Topic 5a - Vergelijking van Algoritmen

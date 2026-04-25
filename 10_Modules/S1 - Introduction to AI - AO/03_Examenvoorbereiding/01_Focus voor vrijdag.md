@@ -105,7 +105,7 @@ Voor het examendeel met een graaf moet je vooral heel vlot kunnen:
 
 Handige hulpmiddelen:
 
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
+- [[04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
 
 ## 4. Klassieke vergelijkingen die je moet kennen
 
@@ -162,15 +162,15 @@ Dit deel lijkt minder zwaar door te wegen, dus focus op het verschil tussen de k
 
 ## 8. Hoofdnota's voor het examen
 
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/00_Centrale examensamenvatting|00_Centrale examensamenvatting]]
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/02_Workflow met Bases|02_Workflow met Bases]]
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
-- [[10_Modules/S1 - Introduction to AI - AO/02_Topics/Topic 3_7 - Overview Search Algorithms/Samenvatting - Topic 3_7 - Overview Search Algorithms|Samenvatting Topic 3_7 - Overview Search Algorithms]]
-- [[10_Modules/S1 - Introduction to AI - AO/02_Topics/Topic 4 - Blind Search/Samenvatting - Topic 4 - Blind Search|Samenvatting Topic 4 - Blind Search]]
-- [[10_Modules/S1 - Introduction to AI - AO/02_Topics/Topic 6 - Heuristic Search/Samenvatting - Topic 6 - Heuristic Search|Samenvatting Topic 6 - Heuristic Search]]
-- [[10_Modules/S1 - Introduction to AI - AO/02_Topics/Topic 7 - Optimal Search/Samenvatting - Topic 7 - Optimal Search|Samenvatting Topic 7 - Optimal Search]]
+- [[00_Centrale examensamenvatting|00_Centrale examensamenvatting]]
+- [[02_Workflow met Bases|02_Workflow met Bases]]
+- [[03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
+- [[04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
+- [[Samenvatting - Topic 3_7 - Overview Search Algorithms|Samenvatting Topic 3_7 - Overview Search Algorithms]]
+- [[Samenvatting - Topic 4 - Blind Search|Samenvatting Topic 4 - Blind Search]]
+- [[Samenvatting - Topic 6 - Heuristic Search|Samenvatting Topic 6 - Heuristic Search]]
+- [[Samenvatting - Topic 7 - Optimal Search|Samenvatting Topic 7 - Optimal Search]]
 
 ## 9. Beste Base voor vrijdag
 
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/Base - AI Examen Cockpit.base|Base - AI Examen Cockpit]]
+- [[Base - AI Examen Cockpit.base|Base - AI Examen Cockpit]]

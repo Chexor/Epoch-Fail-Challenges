@@ -2,7 +2,8 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "promptDelete": false,
-  "attachmentFolderPath": "30_Resources",
+  "attachmentFolderPath": "./",
   "newFileLocation": "folder",
-  "newFileFolderPath": "00_Inbox"
+  "newFileFolderPath": "00_Inbox",
+  "openBehavior": "file:_ Dashboard _"
 }

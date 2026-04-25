@@ -1,4 +1,4 @@
-# _Dashboard_
+h# _Dashboard_
 
 #hub
 
@@ -33,10 +33,10 @@
 ## Actieve Modules
 
 ### S2 Dagonderwijs
-- [[10_Modules/S2 - Introduction to Linux/00_Module_Overzicht|Introduction to Linux]]
+- [[10_Modules/S2 - Introduction to Linux/00_Overview|Introduction to Linux]]
 - [[10_Modules/S2 - Machine Learning Fundamentals/00_Module_Overzicht|Machine Learning Fundamentals]]
 - [[10_Modules/S2 - IoT1/00_Module_Overzicht|IoT1]]
-- [[10_Modules/S2 - Design Patterns/00_Module_Overzicht|Design Patterns]]
+- [[10_Modules/S2 - Design Patterns (Legacy)/00_Module_Overzicht|Design Patterns]]
 
 ### Afstandsonderwijs en Examens
 - [[10_Modules/S1 - Introduction to AI - AO/00_Module_Overzicht|Introduction to AI - AO]]
@@ -51,16 +51,16 @@
 - [[Base - Studiebasis AI en ML.base]]
 - [[Base - Metadata Check.base]]
 - [[Base - Python Codevoorbeelden.base]]
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/Base - AI Examen Cockpit.base]]
+- [[Base - AI Examen Cockpit.base]]
 
 ### Alle beschikbare Bases
 | Base | Locatie |
 | --- | --- |
-| [[Base - Alle conceptnotes.base]] | `20_Domains/` |
-| [[Base - Studiebasis AI en ML.base]] | `20_Domains/` |
-| [[Base - Metadata Check.base]] | `20_Domains/` |
-| [[Base - Python Codevoorbeelden.base]] | `20_Domains/` |
-| [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/Base - AI Examen Cockpit.base]] | `10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/` |
+| [[Base - Alle conceptnotes.base]] | `20_Wiki/` |
+| [[Base - Studiebasis AI en ML.base]] | `20_Wiki/` |
+| [[Base - Metadata Check.base]] | `20_Wiki/` |
+| [[Base - Python Codevoorbeelden.base]] | `20_Wiki/` |
+| [[Base - AI Examen Cockpit.base]] | `10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/` |
 
 ---
 

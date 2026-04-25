@@ -34,7 +34,7 @@ Voorbereiding op het herexamen Data Analysis (datum nog te bepalen).
   - [[Symbolen_En_Tekens_Glossary|Symbolen en tekens]]
 - **[[10_Modules/S1 - Data Analysis - AO/02_Hoofdstukken/|02_Hoofdstukken]]**: Actieve studie per hoofdstuk.
 - **[[10_Modules/S1 - Data Analysis - AO/03_Examenvoorbereiding/|03_Examenvoorbereiding]]**: Synthese en oefenexamens.
-  - [[00_SSOT_Index|SSOT-index]]
+  - [[10_Modules/S1 - Data Analysis - AO/03_Examenvoorbereiding/00_SSOT_Index|SSOT-index]]
   - [[DA-Formularium|Formularium]]
 
 ## 📂 02_Hoofdstukken (Voortgang)
@@ -58,7 +58,7 @@ sort by due
 ```
 
 ## 🧠 Concepten (Atomic Notes)
-*Link hier naar bestanden in 20_Domains*
+*Link hier naar bestanden in 20_Wiki*
 - [[Populatie vs Steekproef]]
 - [[Meetniveaus]]
 - [[Centrummaten]]

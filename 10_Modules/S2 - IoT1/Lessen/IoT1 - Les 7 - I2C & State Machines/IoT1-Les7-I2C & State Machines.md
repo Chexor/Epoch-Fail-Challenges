@@ -1,9 +1,9 @@
 ---
 type: lesnotitie
-vak: "IoT1"
+vak: IoT1
 les: "7"
 datum:
-docent: "Ruben Buysschaert"
+docent: Ruben Buysschaert
 status: actief
 parent: "[[10_Modules/S2 - IoT1/00_Module_Overzicht|IoT1]]"
 related: []

@@ -21,7 +21,7 @@
 
 ## Theorie-opfrissing
 
-Voor inhoudelijke verdieping gebruik je best de neutrale conceptnotes in `20_Domains/`:
+Voor inhoudelijke verdieping gebruik je best de neutrale conceptnotes in `20_Wiki/`:
 
 - [[00_Overzicht Artificial Intelligence]]
 - [[State Space]]

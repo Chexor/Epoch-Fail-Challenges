@@ -5,8 +5,8 @@ thema: herexameninzichten eindopdracht
 status: actief
 parent: "[[10_Modules/S1 - Analysis & Design - AO/00_Module_Overzicht|Module Overzicht]]"
 related:
-  - "[[10_Modules/S1 - Analysis & Design - AO/Eindopdracht/EO_Fleetbooker_v1.pdf]]"
-  - "[[10_Modules/S1 - Analysis & Design - AO/Eindopdracht/Feedback_eindopdracht.md]]"
+  - "[[EO_Fleetbooker_v1.pdf]]"
+  - "[[Feedback_eindopdracht]]"
 ---
 
 # Herexameninzichten uit eindopdracht
@@ -140,4 +140,4 @@ related:
 
 ## Bronnen
 - [[EO_Fleetbooker_v1.pdf|Ingeleverde eindopdracht]]
-- [[Feedback_eindopdracht.md|Feedback van de docent]]
+- [[Feedback_eindopdracht|Feedback van de docent]]

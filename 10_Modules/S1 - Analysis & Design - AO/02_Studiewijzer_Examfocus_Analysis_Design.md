@@ -118,5 +118,5 @@ Voor het herexamen moet je niet alleen de grote concepten kennen, maar ook vrij 
 - Voor jouw herexamen is de combinatie `klassendiagram + events + toestandsdiagram + strakke use-caseafbakening` dus de belangrijkste remediëringszone.
 
 ## Bronnen
-- [[Bronnen/Studiewijzer_Analysis&Design.pdf|Studiewijzer Analysis & Design]]
-- [[Bronnen/Syllabus_Analysis&Design.pdf|Syllabus Analysis & Design]]
+- [[Studiewijzer_Analysis&Design.pdf|Studiewijzer Analysis & Design]]
+- [[Syllabus_Analysis&Design.pdf|Syllabus Analysis & Design]]

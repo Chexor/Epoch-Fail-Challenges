@@ -1,0 +1,186 @@
+/* ==========================================================
+   E-READER / E-INK Focus Styling voor Obsidian (MET ANKERS)
+   Doel: Papier-gevoel IN DE EDITOR, donkere UI eromheen.
+========================================================== */
+
+body {
+  /* Klassiek boek lettertype overal voor de tekst */
+  --font-text: "Literata", "Bookerly", "Georgia", "Merriweather", "Times New Roman", serif !important;
+  
+  /* Organische "Inkt & Markeerstift" Kleuren voor ADHD Ankers */
+  --ink-blue: #3A5A8C;  /* Klassiek vulpen-blauw */
+  --ink-red:  #8B3A3A;  /* Gedempt bordeaux/rode inkt voor bolds */
+  --paper-yellow: #EAE0BA; /* Subtiele gele markeerstift */
+  --stamp-bg: #E2DFD5;  /* Achtergrond voor tags */
+}
+
+/* 0. ISOLEER E-INK KLEUREN ENKEL TOT DE NOTITIES (EDITOR/READING VIEW) */
+.workspace-leaf-content[data-type="markdown"] {
+  /* E-ink basiskleuren: alleen van toepassing binnen de notitie */
+  --background-primary: #F4F1EA !important; /* Zacht papier-wit/crème */
+  --background-primary-alt: #F4F1EA !important; 
+  --background-secondary: #EBE7DF !important; /* Iets donkerder voor randen */
+  --text-normal: #2C2C2C !important; /* Houtskool, zachter dan puur zwart */
+  --text-muted: #6B6A65 !important;
+  --text-faint: #999999 !important;
+  --background-modifier-border: #DCD9D0 !important;
+  --background-modifier-hover: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Forceer de lichte achtergrond op de daadwerkelijke editor elementen */
+.workspace-leaf-content[data-type="markdown"] .view-content,
+.workspace-leaf-content[data-type="markdown"] .view-header {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
+}
+
+/* Tekstkleuren forceren, zodat dark mode UI ze niet overschrijft in de note */
+.workspace-leaf-content[data-type="markdown"] .markdown-source-view,
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view {
+  color: var(--text-normal) !important;
+  background-color: var(--background-primary) !important;
+}
+
+/* 1. TYPOGRAFIE & LAYOUT (Zoals een boek) */
+.markdown-rendered p, 
+.cm-line {
+  font-size: 1.16em; /* Een tikkeltje groter voor rustiger lezen (was 1.1em) */
+  line-height: 1.55 !important; /* Teruggezet naar comfortabele boek-hoogte */
+  word-spacing: 0.02em;
+  letter-spacing: normal !important; /* Verwijder extra ruimte TUSSEN letters */
+  margin-bottom: 1em !important;
+}
+
+/* Extra ademruimte tussen bullets voor scannability */
+.workspace-leaf-content[data-type="markdown"] li {
+  margin-bottom: 0.8em !important;
+  line-height: 1.5 !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] ul,
+.workspace-leaf-content[data-type="markdown"] ol {
+  margin-top: 0.5em !important;
+  margin-bottom: 1.5em !important;
+}
+
+/* 2. HEADINGS */
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.cm-header-1, .cm-header-2, .cm-header-3 {
+  font-family: var(--font-text);
+  border-bottom: none !important; /* Geen strepen, zoals in een boek */
+}
+
+.markdown-rendered h1, 
+.cm-header-1 {
+  color: #1A1A1A !important; 
+  font-size: 2em !important;
+  font-weight: 700 !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.8em !important;
+  text-align: center; /* Hoofdstuk-titels in het midden */
+}
+
+.markdown-rendered h2, 
+.cm-header-2 {
+  color: var(--ink-blue) !important; /* Visueel Anker: Vulpen-blauw voor H2 */
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.6em !important;
+  font-style: italic; /* Onderscheid door cursief in plaats van strepen */
+}
+
+.markdown-rendered h3, 
+.cm-header-3 {
+  color: #1A1A1A !important; 
+  font-size: 1.2em !important;
+  font-weight: 600 !important;
+  margin-top: 1.2em !important;
+  margin-bottom: 0.4em !important;
+}
+
+/* 3. VISUELE ANKERS (Inkt & Markeringen) */
+
+/* Bolds: Terug naar zwaar, inkt-zwart voor puur typografisch contrast. */
+.workspace-leaf-content[data-type="markdown"] strong, 
+.workspace-leaf-content[data-type="markdown"] .cm-strong {
+  font-weight: 700 !important;
+  color: #111111 !important; /* Puur inkt-zwart */
+}
+
+/* Italics: Subtiel donkergrijs met een tikje extra letterspatiëring */
+.workspace-leaf-content[data-type="markdown"] em, 
+.workspace-leaf-content[data-type="markdown"] .cm-em {
+  font-style: italic !important;
+  color: #4A4A4A !important; /* Iets lichter grijs dan gewone tekst */
+  letter-spacing: 0.03em !important;
+}
+
+/* Links: Klassiek vulpen-blauw met een zachte onderstreping */
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered a,
+.workspace-leaf-content[data-type="markdown"] .cm-link,
+.workspace-leaf-content[data-type="markdown"] .cm-hmd-internal-link {
+  color: var(--ink-blue) !important;
+  text-decoration: underline;
+  text-decoration-color: #B5C4D9;
+}
+
+/* Highlights (==text==): Zachte papieren gele markeerstift */
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered mark, 
+.workspace-leaf-content[data-type="markdown"] .cm-formatting-highlight, 
+.workspace-leaf-content[data-type="markdown"] .cm-highlight {
+  background-color: var(--paper-yellow) !important;
+  color: #1A1A1A !important;
+  padding: 0 0.2em;
+  border-radius: 2px;
+}
+
+/* Tags: Gedempte "gestempelde" look op papier */
+.workspace-leaf-content[data-type="markdown"] .tag,
+.workspace-leaf-content[data-type="markdown"] .cm-hashtag {
+  background-color: var(--stamp-bg) !important;
+  color: #5A5A55 !important;
+  border: 1px solid #D1CEC4;
+  border-radius: 4px;
+}
+
+/* 4. CODE & BLOKKEN (Subtiel, alsof het met typemachine is getypt) */
+
+/* Inline code (in een lopende zin) */
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered p code, 
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered li code,
+.workspace-leaf-content[data-type="markdown"] .cm-inline-code {
+  font-family: "Courier New", Courier, monospace !important;
+  background-color: var(--background-secondary) !important;
+  border: 1px solid #DCD9D0;
+  color: #4A4A4A !important;
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+/* Code blocks (grote blokken code) */
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered pre,
+.workspace-leaf-content[data-type="markdown"] .cm-s-obsidian .HyperMD-codeblock {
+  background-color: var(--background-secondary) !important;
+  border: 1px solid var(--background-modifier-border) !important;
+  border-radius: 4px;
+}
+
+/* Zorg dat de tekst IN een code block geen eigen, afwijkende achtergrondkleur krijgt */
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered pre code {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--text-normal) !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+/* Verberg de actieve lijn achtergrond voor dat échte statische papier-gevoel */
+.workspace-leaf-content[data-type="markdown"] .cm-active {
+  background-color: transparent !important;
+}
+
+/* Cursor subtiel houden in lichte modus */
+.workspace-leaf-content[data-type="markdown"] .cm-cursor {
+  border-left-width: 2px;
+  border-left-color: #2C2C2C !important;
+}

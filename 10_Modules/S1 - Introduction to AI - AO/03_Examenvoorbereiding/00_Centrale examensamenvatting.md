@@ -39,7 +39,7 @@ status: actief
 > - [[#11. Gebruik van de conceptnotes]]
 
 > Dit is de centrale examennota voor `Introduction to AI`.
-> Deze note bundelt de kern uit de oudere examendocumenten en verwijst door naar de duurzame conceptnotes in `20_Domains/`.
+> Deze note bundelt de kern uit de oudere examendocumenten en verwijst door naar de duurzame conceptnotes in `20_Wiki/`.
 
 ## 1. Wat lijkt het examen te testen?
 
@@ -182,7 +182,7 @@ Als je een graaf krijgt met `start`, `goal`, afstanden en eventueel heuristische
 
 Gebruik hiervoor ook:
 
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
+- [[04_Frontier correct uitschrijven op papier|04_Frontier correct uitschrijven op papier]]
 
 ### Wat je per algoritme moet noteren
 
@@ -197,7 +197,7 @@ Gebruik hiervoor ook:
 
 Gebruik dan ook:
 
-- [[10_Modules/S1 - Introduction to AI - AO/03_Examenvoorbereiding/03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
+- [[03_Algoritmes herkennen aan code|03_Algoritmes herkennen aan code]]
 
 ### Veilige examenmethode
 
@@ -349,7 +349,7 @@ Gebruik hiervoor ook:
 
 Deze centrale note is je **examengerichte overzicht**.
 
-Gebruik `20_Domains/` zo:
+Gebruik `20_Wiki/` zo:
 
 - overview nodig -> [[00_Overzicht Artificial Intelligence]] of [[00_Overzicht Machine Learning Concepten]]
 - 1 algoritme herhalen -> open de specifieke topicnote

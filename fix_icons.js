@@ -18,7 +18,7 @@ function walk(dir, filelist = []) {
   return filelist;
 }
 
-const allFiles = walk('20_Domains');
+const allFiles = walk('20_Wiki');
 let changed = false;
 
 for (const file of allFiles) {
@@ -56,5 +56,5 @@ if (changed) {
   fs.writeFileSync(dataFile, JSON.stringify(data, null, 2), 'utf8');
   console.log('data.json updated successfully.');
 } else {
-  console.log('All 20_Domains icons are already correct.');
+  console.log('All 20_Wiki icons are already correct.');
 }
