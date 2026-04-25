@@ -1,0 +1,15 @@
+# Next Lesson
+
+In the next lesson, we'll explore advanced shell features including redirection, pipes, and command chaining to create powerful command combinations.
+
+---
+
+*"The shell environment is your workspace - customize it to make yourself more productive."*
+---
+
+## Navigation
+
+**Next:** [→ Learning Objectives](10_Modules/S2%20-%20Introduction%20to%20Linux/10_Sources/IntroToLinux-Repo/04-Redirects-Pipes/00-learning-objectives.md)  
+**Previous:** [← Key Takeaways](10_Modules/S2%20-%20Introduction%20to%20Linux/10_Sources/IntroToLinux-Repo/03-History-Variables/11-key-takeaways.md)  
+**Lesson Home:** [↑ Lesson 3: History & Variables](../)
+**Course Home:** [⌂ Introduction to Linux](10_Modules/S2%20-%20Introduction%20to%20Linux/10_Sources/IntroToLinux-Repo/README.md)

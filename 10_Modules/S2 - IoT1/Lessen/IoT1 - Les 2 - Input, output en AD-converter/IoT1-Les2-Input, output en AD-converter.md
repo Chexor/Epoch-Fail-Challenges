@@ -1,9 +1,9 @@
 ---
 type: lesnotitie
-vak: "IoT1"
-vakafkorting: "IoT1"
+vak: IoT1
+vakafkorting: IoT1
 les: "2"
-thema: "Input, output en AD-converter"
+thema: Input, output en AD-converter
 datum:
 docent: ""
 status: actief

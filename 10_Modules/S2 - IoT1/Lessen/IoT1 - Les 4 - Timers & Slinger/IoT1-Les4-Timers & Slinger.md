@@ -1,9 +1,9 @@
 ---
 type: lesnotitie
-vak: "IoT1"
-vakafkorting: "IoT1"
+vak: IoT1
+vakafkorting: IoT1
 les: "4"
-thema: "Timers & Slinger"
+thema: Timers & Slinger
 datum:
 docent: ""
 status: actief

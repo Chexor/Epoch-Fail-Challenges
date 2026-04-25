@@ -1,9 +1,9 @@
 ---
 type: lesnotitie
-vak: "IoT1"
-vakafkorting: "IoT1"
+vak: IoT1
+vakafkorting: IoT1
 les: "5"
-thema: "Structs, Pointers, Alternate Functions en USART"
+thema: Structs, Pointers, Alternate Functions en USART
 datum:
 docent: ""
 status: actief

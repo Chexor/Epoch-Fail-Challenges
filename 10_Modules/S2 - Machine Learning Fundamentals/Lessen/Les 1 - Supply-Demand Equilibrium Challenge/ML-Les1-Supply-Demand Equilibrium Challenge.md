@@ -1,9 +1,9 @@
 ---
 type: lesnotitie
-vak: "Machine Learning Fundamentals"
-vakafkorting: "ML"
+vak: Machine Learning Fundamentals
+vakafkorting: ML
 les: "1"
-thema: "Supply-Demand Equilibrium Challenge"
+thema: Supply-Demand Equilibrium Challenge
 datum:
 docent: ""
 status: actief

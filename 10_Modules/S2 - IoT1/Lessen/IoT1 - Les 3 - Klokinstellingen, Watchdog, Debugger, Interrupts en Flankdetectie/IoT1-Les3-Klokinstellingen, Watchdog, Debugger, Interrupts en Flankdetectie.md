@@ -1,9 +1,9 @@
 ---
 type: lesnotitie
-vak: "IoT1"
-vakafkorting: "IoT1"
+vak: IoT1
+vakafkorting: IoT1
 les: "3"
-thema: "Klokinstellingen, Watchdog, Debugger, Interrupts en Flankdetectie"
+thema: Klokinstellingen, Watchdog, Debugger, Interrupts en Flankdetectie
 datum:
 docent: ""
 status: actief
