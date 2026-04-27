@@ -1,0 +1,297 @@
+/* ==========================================================
+   E-READER / E-INK Focus Styling for Obsidian
+   ----------------------------------------------------------
+   Goal:
+   - Paper-like markdown notes
+   - Dark Obsidian UI can remain around the note
+   - Clear visual anchors for ADHD/ADD-friendly scanning
+
+   Main adjustment area:
+   - Edit section 1 only for most tuning
+========================================================== */
+
+
+/* ==========================================================
+   1. SETTINGS / DESIGN TOKENS
+   ----------------------------------------------------------
+   Adjust these variables first.
+========================================================== */
+
+body {
+  /* Fonts */
+  --ereader-font-text: "Literata", "Bookerly", "Georgia", "Merriweather", "Times New Roman", serif;
+  --ereader-font-code: "Courier New", Courier, monospace;
+
+  /* Paper surface */
+  --ereader-paper-bg: #F4F1EA;
+  --ereader-paper-bg-alt: #EBE7DF;
+  --ereader-border: #DCD9D0;
+  --ereader-hover: rgba(0, 0, 0, 0.05);
+
+  /* Text */
+  --ereader-text-normal: #2C2C2C;
+  --ereader-text-strong: #111111;
+  --ereader-text-muted: #6B6A65;
+  --ereader-text-faint: #999999;
+  --ereader-text-heading: #1A1A1A;
+  --ereader-text-emphasis: #4A4A4A;
+
+  /* Visual anchors */
+  --ereader-anchor-blue: #3A5A8C;
+  --ereader-link-underline: #B5C4D9;
+  --ereader-highlight-bg: #EAE0BA;
+  --ereader-tag-bg: #E2DFD5;
+  --ereader-tag-text: #5A5A55;
+  --ereader-tag-border: #D1CEC4;
+
+  /* Typography */
+  --ereader-body-size: 1.16em;
+  --ereader-body-line-height: 1.55;
+  --ereader-body-word-spacing: 0.02em;
+  --ereader-em-letter-spacing: 0.03em;
+
+  --ereader-h1-size: 2em;
+  --ereader-h2-size: 1.5em;
+  --ereader-h3-size: 1.2em;
+
+  /* Spacing */
+  --ereader-paragraph-gap: 1em;
+  --ereader-list-item-gap: 0.8em;
+  --ereader-list-top-gap: 0.5em;
+  --ereader-list-bottom-gap: 1.5em;
+
+  --ereader-h1-top: 2em;
+  --ereader-h1-bottom: 0.8em;
+  --ereader-h2-top: 1.5em;
+  --ereader-h2-bottom: 0.6em;
+  --ereader-h3-top: 1.2em;
+  --ereader-h3-bottom: 0.4em;
+
+  /* Shapes */
+  --ereader-radius-small: 2px;
+  --ereader-radius-medium: 4px;
+
+  /* Cursor */
+  --ereader-cursor-width: 2px;
+}
+
+
+/* ==========================================================
+   2. OPTIONAL QUICK MODES
+   ----------------------------------------------------------
+   Uncomment one block if you want a stronger preset.
+========================================================== */
+
+/*
+body {
+  --ereader-body-size: 1.22em;
+  --ereader-body-line-height: 1.65;
+  --ereader-paragraph-gap: 1.15em;
+}
+*/
+
+/*
+body {
+  --ereader-paper-bg: #FBF7EF;
+  --ereader-paper-bg-alt: #F1EBDD;
+}
+*/
+
+/*
+body {
+  --ereader-anchor-blue: #2F4F7F;
+  --ereader-highlight-bg: #F0DFA3;
+}
+*/
+
+
+/* ==========================================================
+   3. NOTE SURFACE / OBSIDIAN MARKDOWN SCOPE
+   ----------------------------------------------------------
+   Keeps the e-reader styling inside markdown notes.
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] {
+  --font-text: var(--ereader-font-text) !important;
+
+  --background-primary: var(--ereader-paper-bg) !important;
+  --background-primary-alt: var(--ereader-paper-bg) !important;
+  --background-secondary: var(--ereader-paper-bg-alt) !important;
+
+  --text-normal: var(--ereader-text-normal) !important;
+  --text-muted: var(--ereader-text-muted) !important;
+  --text-faint: var(--ereader-text-faint) !important;
+
+  --background-modifier-border: var(--ereader-border) !important;
+  --background-modifier-hover: var(--ereader-hover) !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] .view-content,
+.workspace-leaf-content[data-type="markdown"] .view-header,
+.workspace-leaf-content[data-type="markdown"] .markdown-source-view,
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view {
+  background-color: var(--ereader-paper-bg) !important;
+  color: var(--ereader-text-normal) !important;
+}
+
+
+/* ==========================================================
+   4. BODY TYPOGRAPHY
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered p,
+.workspace-leaf-content[data-type="markdown"] .cm-line {
+  font-size: var(--ereader-body-size);
+  line-height: var(--ereader-body-line-height) !important;
+  word-spacing: var(--ereader-body-word-spacing);
+  letter-spacing: normal !important;
+  margin-bottom: var(--ereader-paragraph-gap) !important;
+}
+
+
+/* ==========================================================
+   5. HEADINGS
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered h1,
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered h2,
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered h3,
+.workspace-leaf-content[data-type="markdown"] .cm-header-1,
+.workspace-leaf-content[data-type="markdown"] .cm-header-2,
+.workspace-leaf-content[data-type="markdown"] .cm-header-3 {
+  font-family: var(--ereader-font-text);
+  border-bottom: none !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered h1,
+.workspace-leaf-content[data-type="markdown"] .cm-header-1 {
+  color: var(--ereader-text-heading) !important;
+  font-size: var(--ereader-h1-size) !important;
+  font-weight: 700 !important;
+  margin-top: var(--ereader-h1-top) !important;
+  margin-bottom: var(--ereader-h1-bottom) !important;
+  text-align: center;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered h2,
+.workspace-leaf-content[data-type="markdown"] .cm-header-2 {
+  color: var(--ereader-anchor-blue) !important;
+  font-size: var(--ereader-h2-size) !important;
+  font-weight: 600 !important;
+  margin-top: var(--ereader-h2-top) !important;
+  margin-bottom: var(--ereader-h2-bottom) !important;
+  font-style: italic;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered h3,
+.workspace-leaf-content[data-type="markdown"] .cm-header-3 {
+  color: var(--ereader-text-heading) !important;
+  font-size: var(--ereader-h3-size) !important;
+  font-weight: 600 !important;
+  margin-top: var(--ereader-h3-top) !important;
+  margin-bottom: var(--ereader-h3-bottom) !important;
+}
+
+
+/* ==========================================================
+   6. ADHD / ADD VISUAL ANCHORS
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] strong,
+.workspace-leaf-content[data-type="markdown"] .cm-strong {
+  font-weight: 700 !important;
+  color: var(--ereader-text-strong) !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] em,
+.workspace-leaf-content[data-type="markdown"] .cm-em {
+  font-style: italic !important;
+  color: var(--ereader-text-emphasis) !important;
+  letter-spacing: var(--ereader-em-letter-spacing) !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered a,
+.workspace-leaf-content[data-type="markdown"] .cm-link,
+.workspace-leaf-content[data-type="markdown"] .cm-hmd-internal-link {
+  color: var(--ereader-anchor-blue) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--ereader-link-underline);
+  text-underline-offset: 0.13em;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered mark,
+.workspace-leaf-content[data-type="markdown"] .cm-formatting-highlight,
+.workspace-leaf-content[data-type="markdown"] .cm-highlight {
+  background-color: var(--ereader-highlight-bg) !important;
+  color: var(--ereader-text-heading) !important;
+  padding: 0 0.2em;
+  border-radius: var(--ereader-radius-small);
+}
+
+.workspace-leaf-content[data-type="markdown"] .tag,
+.workspace-leaf-content[data-type="markdown"] .cm-hashtag {
+  background-color: var(--ereader-tag-bg) !important;
+  color: var(--ereader-tag-text) !important;
+  border: 1px solid var(--ereader-tag-border);
+  border-radius: var(--ereader-radius-medium);
+}
+
+
+/* ==========================================================
+   7. LISTS
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] li {
+  margin-bottom: var(--ereader-list-item-gap) !important;
+  line-height: 1.5 !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] ul,
+.workspace-leaf-content[data-type="markdown"] ol {
+  margin-top: var(--ereader-list-top-gap) !important;
+  margin-bottom: var(--ereader-list-bottom-gap) !important;
+}
+
+
+/* ==========================================================
+   8. CODE
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered p code,
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered li code,
+.workspace-leaf-content[data-type="markdown"] .cm-inline-code {
+  font-family: var(--ereader-font-code) !important;
+  background-color: var(--ereader-paper-bg-alt) !important;
+  border: 1px solid var(--ereader-border);
+  color: var(--ereader-text-emphasis) !important;
+  padding: 0.1em 0.3em;
+  border-radius: var(--ereader-radius-small);
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered pre,
+.workspace-leaf-content[data-type="markdown"] .cm-s-obsidian .HyperMD-codeblock {
+  background-color: var(--ereader-paper-bg-alt) !important;
+  border: 1px solid var(--ereader-border) !important;
+  border-radius: var(--ereader-radius-medium);
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-rendered pre code {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--ereader-text-normal) !important;
+  font-family: var(--ereader-font-code) !important;
+}
+
+
+/* ==========================================================
+   9. EDITOR-SPECIFIC BEHAVIOR
+========================================================== */
+
+.workspace-leaf-content[data-type="markdown"] .cm-active {
+  background-color: transparent !important;
+}
+
+.workspace-leaf-content[data-type="markdown"] .cm-cursor {
+  border-left-width: var(--ereader-cursor-width);
+  border-left-color: var(--ereader-text-normal) !important;
+}
